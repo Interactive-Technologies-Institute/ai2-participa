@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import { buttonVariants } from '$lib/components/ui/button';
 	import * as Popover from '$lib/components/ui/popover';
 	import { cn } from '$lib/utils';
@@ -59,44 +60,56 @@
 		preventScroll
 	>
 		<div class="flex flex-col gap-5 overflow-auto px-6 py-6">
-			{@render NavItem({ href: '/relatorios/', content: 'Relatórios' })}
+			{@render NavItem({ href: resolve('/relatorios/'), content: 'Relatórios' })}
 			<div class="flex flex-col gap-2">
 				<div class="text-sm font-medium text-muted-foreground">Estratégia de Participação</div>
 				<div class="flex flex-col gap-2">
-					{@render NavItem({ href: '/participacao-publica/', content: 'Participação Pública' })}
 					{@render NavItem({
-						href: '/metodologia-participacao-publica/',
+						href: resolve('/participacao-publica/'),
+						content: 'Participação Pública'
+					})}
+					{@render NavItem({
+						href: resolve('/metodologia-participacao-publica/'),
 						content: 'Metodologia de Participação Pública'
 					})}
 					{@render NavItem({
-						href: '/comissao-acompanhamento/',
+						href: resolve('/comissao-acompanhamento/'),
 						content: 'Comissão de Acompanhamento'
 					})}
-					{@render NavItem({ href: '/reunioes-entidades/', content: 'Reuniões com Entidades' })}
-					{@render NavItem({ href: '/mesas-tematicas/', content: 'Mesas Temáticas' })}
 					{@render NavItem({
-						href: '/conferencias-reunioes-descentralizadas/',
+						href: resolve('/reunioes-entidades/'),
+						content: 'Reuniões com Entidades'
+					})}
+					{@render NavItem({ href: resolve('/mesas-tematicas/'), content: 'Mesas Temáticas' })}
+					{@render NavItem({
+						href: resolve('/conferencias-reunioes-descentralizadas/'),
 						content: 'Conferências e Reuniões Descentralizadas'
 					})}
-					{@render NavItem({ href: '/iniciativas-bottom-up/', content: 'Iniciativas Bottom-up' })}
+					{@render NavItem({
+						href: resolve('/iniciativas-bottom-up/'),
+						content: 'Iniciativas Bottom-up'
+					})}
 				</div>
 			</div>
 			<div class="flex flex-col gap-2">
 				<div class="text-sm font-medium text-muted-foreground">O que é</div>
 				<div class="flex flex-col gap-2">
-					{@render NavItem({ href: '/metodologia-st4s/', content: 'Metodologia ST4S' })}
+					{@render NavItem({ href: resolve('/metodologia-st4s/'), content: 'Metodologia ST4S' })}
 					{@render NavItem({
-						href: '/metodologia-avaliacao-estrategica-ai2/',
+						href: resolve('/metodologia-avaliacao-estrategica-ai2/'),
 						content: 'Metodologia de Avaliação Estratégica da AI²'
 					})}
-					{@render NavItem({ href: '/legislacao-nacional/', content: 'Legislação Nacional' })}
+					{@render NavItem({
+						href: resolve('/legislacao-nacional/'),
+						content: 'Legislação Nacional'
+					})}
 				</div>
 			</div>
 			<div class="flex flex-col gap-2">
 				<div class="text-sm font-medium text-muted-foreground">Sobre a Equipa</div>
 				<div class="flex flex-col gap-2">
-					{@render NavItem({ href: '/coordenacao/', content: 'Coordenação' })}
-					{@render NavItem({ href: '/equipa-peritos/', content: 'Equipa de Peritos' })}
+					{@render NavItem({ href: resolve('/coordenacao/'), content: 'Coordenação' })}
+					{@render NavItem({ href: resolve('/equipa-peritos/'), content: 'Equipa de Peritos' })}
 				</div>
 			</div>
 		</div>

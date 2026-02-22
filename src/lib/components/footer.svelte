@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { asset, resolve } from '$app/paths';
 	import { Button } from '$lib/components/ui/button';
 	import { Separator } from '$lib/components/ui/separator';
 </script>
@@ -26,7 +27,7 @@
 				<div class="flex flex-col gap-4">
 					<a href="https://www.planapp.gov.pt/" target="_blank" rel="noreferrer">
 						<img
-							src="/logo-planapp.svg"
+							src={asset('/logo-planapp.svg')}
 							alt="Logo PLANAPP"
 							class="h-24 w-auto transition-opacity hover:opacity-80"
 						/>
@@ -37,7 +38,7 @@
 						rel="noreferrer"
 					>
 						<img
-							src="/logo-meic.svg"
+							src={asset('/logo-meic.svg')}
 							alt="Logo Ministério da Educação, Ciência e Inovação"
 							class="h-24 w-auto transition-opacity hover:opacity-80"
 						/>
@@ -48,56 +49,72 @@
 				<p class="font-semibold">Estratégia de Participação</p>
 				<ul class="mt-3 space-y-2 text-sm text-muted-foreground">
 					<li>
-						<a href="/participacao-publica/" class="hover:text-foreground">Participação Pública</a>
+						<a href={resolve('/participacao-publica/')} class="hover:text-foreground"
+							>Participação Pública</a
+						>
 					</li>
 					<li>
-						<a href="/metodologia-participacao-publica/" class="hover:text-foreground">
+						<a href={resolve('/metodologia-participacao-publica/')} class="hover:text-foreground">
 							Metodologia de Participação Pública
 						</a>
 					</li>
 					<li>
-						<a href="/comissao-acompanhamento/" class="hover:text-foreground">
+						<a href={resolve('/comissao-acompanhamento/')} class="hover:text-foreground">
 							Comissão de Acompanhamento
 						</a>
 					</li>
 					<li>
-						<a href="/reunioes-entidades/" class="hover:text-foreground">Reuniões com Entidades</a>
+						<a href={resolve('/reunioes-entidades/')} class="hover:text-foreground"
+							>Reuniões com Entidades</a
+						>
 					</li>
 					<li>
-						<a href="/mesas-tematicas/" class="hover:text-foreground">Mesas Temáticas</a>
+						<a href={resolve('/mesas-tematicas/')} class="hover:text-foreground">Mesas Temáticas</a>
 					</li>
 					<li>
-						<a href="/conferencias-reunioes-descentralizadas/" class="hover:text-foreground">
+						<a
+							href={resolve('/conferencias-reunioes-descentralizadas/')}
+							class="hover:text-foreground"
+						>
 							Conferências e Reuniões Descentralizadas
 						</a>
 					</li>
 					<li>
-						<a href="/iniciativas-bottom-up/" class="hover:text-foreground">Iniciativas Bottom-up</a
+						<a href={resolve('/iniciativas-bottom-up/')} class="hover:text-foreground"
+							>Iniciativas Bottom-up</a
 						>
 					</li>
 				</ul>
 			</div>
 			<div>
-				<a href="/relatorios/" class="hover:text-foreground">Relatórios</a>
+				<a href={resolve('/relatorios/')} class="hover:text-foreground">Relatórios</a>
 				<p class="mt-4 font-semibold text-foreground">O que é</p>
 				<ul class="mt-3 space-y-2 text-sm text-muted-foreground">
 					<li>
-						<a href="/metodologia-st4s/" class="hover:text-foreground">Metodologia ST4S</a>
+						<a href={resolve('/metodologia-st4s/')} class="hover:text-foreground"
+							>Metodologia ST4S</a
+						>
 					</li>
 					<li>
-						<a href="/metodologia-avaliacao-estrategica-ai2/" class="hover:text-foreground">
+						<a
+							href={resolve('/metodologia-avaliacao-estrategica-ai2/')}
+							class="hover:text-foreground"
+						>
 							Metodologia de Avaliação Estratégica da AI²
 						</a>
 					</li>
 					<li>
-						<a href="/legislacao-nacional/" class="hover:text-foreground">Legislação Nacional</a>
+						<a href={resolve('/legislacao-nacional/')} class="hover:text-foreground"
+							>Legislação Nacional</a
+						>
 					</li>
 				</ul>
 				<p class="mt-4 font-semibold text-foreground">Sobre a Equipa</p>
 				<ul class="mt-3 space-y-2 text-sm text-muted-foreground">
-					<li><a href="/coordenacao/" class="hover:text-foreground">Coordenação</a></li>
+					<li><a href={resolve('/coordenacao/')} class="hover:text-foreground">Coordenação</a></li>
 					<li>
-						<a href="/equipa-peritos/" class="hover:text-foreground">Equipa de Peritos</a>
+						<a href={resolve('/equipa-peritos/')} class="hover:text-foreground">Equipa de Peritos</a
+						>
 					</li>
 				</ul>
 			</div>
