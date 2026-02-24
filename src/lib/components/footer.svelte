@@ -38,8 +38,8 @@
 						rel="noreferrer"
 					>
 						<img
-							src={asset('/logo-meic.svg')}
-							alt="Logo Ministério da Educação, Ciência e Inovação"
+							src={asset('/logo-pt.svg')}
+							alt="Logo Goveno da República Portuguesa"
 							class="h-24 w-auto transition-opacity hover:opacity-80"
 						/>
 					</a>

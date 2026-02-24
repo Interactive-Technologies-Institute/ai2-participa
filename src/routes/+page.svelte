@@ -7,6 +7,13 @@
 >
 	<div class="relative z-10 container">
 		<div class="mx-auto max-w-4xl text-center">
+			<div class="mb-8 flex justify-center">
+				<img
+					src="/AI2-logo.png"
+					alt="AI² - Agência para a Investigação e Inovação"
+					class="h-48 w-auto transition-opacity hover:opacity-80"
+				/>
+			</div>
 			<h1 class="font-title text-4xl font-bold sm:text-5xl md:text-6xl">
 				Espaço de diálogo sobre as prioridades nacionais de investigação e inovação no âmbito da
 				criação da AI²
