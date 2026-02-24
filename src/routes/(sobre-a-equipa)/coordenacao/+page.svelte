@@ -1,5 +1,6 @@
 <script lang="ts">
 	import PageHeader from '$lib/components/page-header.svelte';
+	import { asset } from '$app/paths';
 </script>
 
 <PageHeader title="Coordenação" />
@@ -11,10 +12,18 @@
 			plurianual da Agência para a Investigação e Inovação (AI²).
 		</p>
 		<h2>Coordenação Científica</h2>
-		<p class="large">
-			Professora Doutora Maria do Rosário Partidário<br />
-			<span class="muted">Coordenação Científica da Metodologia ST4S</span>
-		</p>
+		<div class="mt-4 flex flex-col gap-4 sm:flex-row sm:items-center">
+			<img
+				src={asset('/photos/MariaRosarioPartidario.jpg')}
+				alt="Professora Doutora Maria do Rosário Partidário"
+				class="h-28 w-28 shrink-0 rounded-full object-cover shadow-sm border border-slate-200 bg-slate-50"
+				loading="lazy"
+			/>
+			<p class="large">
+				Professora Doutora Maria do Rosário Partidário<br />
+				<span class="muted">Coordenação Científica da Metodologia ST4S</span>
+			</p>
+		</div>
 		<p>
 			Professora Catedrática do Instituto Superior Técnico, especialista em Avaliação Estratégica e
 			autora da metodologia ST4S - Strategic Thinking for Sustainability, que estrutura o presente
