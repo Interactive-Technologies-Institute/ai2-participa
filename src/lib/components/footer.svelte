@@ -33,7 +33,7 @@
 						/>
 					</a>
 					<a
-						href="https://www.gov.pt/entidades/ministerio-da-educacao-ciencia-e-inovacao"
+						href="https://www.portugal.gov.pt/pt/gc25"
 						target="_blank"
 						rel="noreferrer"
 					>

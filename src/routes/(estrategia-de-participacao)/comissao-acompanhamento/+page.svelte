@@ -17,6 +17,7 @@
 			<li>Ana Casaca (Conselho Europeu de Inovação).</li>
 			<li>Evelyn Wang (Massachusetts Institute of Technology - MIT).</li>
 			<li>Fernanda Leite (University of Texas at Austin).</li>
+			<li>Gonçalo Quadros (Critical Software SA).</li>
 			<li>José Fonseca Moura (Carnegie Mellon University).</li>
 			<li>Luís Portela (Fundação Bial).</li>
 		</ul>
