@@ -7,9 +7,9 @@
 	import { browser } from '$app/environment';
 	import { initLang, getLang, t } from '$lib/i18n.svelte';
 
-	const siteUrl = 'https://TODO.example.pt'; // TODO: replace with production URL
+	const siteUrl = 'https://ai2participa.pt'; // TODO: replace with production URL
 	const title = 'AI²Participa';
-	const image = `${siteUrl}/AI2-logo.svg`;
+	const image = `${siteUrl}/AI2-logo.png`;
 
 	onMount(() => {
 		initLang();
