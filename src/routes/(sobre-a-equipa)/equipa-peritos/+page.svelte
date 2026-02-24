@@ -111,7 +111,7 @@
 									loading="lazy"
 								/>
 							{:else}
-								<div class="h-14 w-14 shrink-0 rounded-full border border-slate-200 bg-slate-50" />
+								<div class="h-14 w-14 shrink-0 rounded-full border border-slate-200 bg-slate-50"></div>
 							{/if}
 							<span>{label(person)}</span>
 						</li>
