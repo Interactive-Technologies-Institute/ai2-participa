@@ -3,6 +3,7 @@
 	import * as NavigationMenu from '$lib/components/ui/navigation-menu';
 	import { navigationMenuTriggerStyle } from '$lib/components/ui/navigation-menu/navigation-menu-trigger.svelte';
 	import type { HTMLAttributes } from 'svelte/elements';
+	import { t } from '$lib/i18n.svelte';
 
 	let {
 		class: className
@@ -16,67 +17,69 @@
 		<NavigationMenu.Item>
 			<NavigationMenu.Link>
 				{#snippet child()}
-					<a href={resolve('/relatorios/')} class={navigationMenuTriggerStyle()}>Relatórios</a>
+					<a href={resolve('/relatorios/')} class={navigationMenuTriggerStyle()}>{t('nav.reports')}</a>
 				{/snippet}
 			</NavigationMenu.Link>
 		</NavigationMenu.Item>
 		<NavigationMenu.Item>
-			<NavigationMenu.Trigger>Estratégia de Participação</NavigationMenu.Trigger>
+			<NavigationMenu.Trigger>{t('nav.participationStrategy')}</NavigationMenu.Trigger>
 			<NavigationMenu.Content>
 				<ul class="grid w-[260px] gap-4 p-2">
 					<li>
 						<NavigationMenu.Link href={resolve('/participacao-publica/')}>
-							Participação Pública
+							{t('nav.publicParticipation')}
 						</NavigationMenu.Link>
 						<NavigationMenu.Link href={resolve('/metodologia-participacao-publica/')}>
-							Metodologia de Participação Pública
+							{t('nav.publicParticipationMethodology')}
 						</NavigationMenu.Link>
 						<NavigationMenu.Link href={resolve('/comissao-acompanhamento/')}>
-							Comissão de Acompanhamento
+							{t('nav.advisoryCommittee')}
 						</NavigationMenu.Link>
 						<NavigationMenu.Link href={resolve('/reunioes-entidades/')}>
-							Reuniões com Entidades
+							{t('nav.stakeholderMeetings')}
 						</NavigationMenu.Link>
-						<NavigationMenu.Link href={resolve('/mesas-tematicas/')}
-							>Mesas Temáticas</NavigationMenu.Link
-						>
+						<NavigationMenu.Link href={resolve('/mesas-tematicas/')}>
+							{t('nav.thematicTables')}
+						</NavigationMenu.Link>
 						<NavigationMenu.Link href={resolve('/conferencias-reunioes-descentralizadas/')}>
-							Conferências e Reuniões Descentralizadas
+							{t('nav.decentralizedConferences')}
 						</NavigationMenu.Link>
 						<NavigationMenu.Link href={resolve('/iniciativas-bottom-up/')}>
-							Iniciativas Bottom-up
+							{t('nav.bottomUpInitiatives')}
 						</NavigationMenu.Link>
 					</li>
 				</ul>
 			</NavigationMenu.Content>
 		</NavigationMenu.Item>
 		<NavigationMenu.Item>
-			<NavigationMenu.Trigger>O que é</NavigationMenu.Trigger>
+			<NavigationMenu.Trigger>{t('nav.whatIsIt')}</NavigationMenu.Trigger>
 			<NavigationMenu.Content>
 				<ul class="grid w-[280px] gap-4 p-2">
 					<li>
-						<NavigationMenu.Link href={resolve('/metodologia-st4s/')}
-							>Metodologia ST4S</NavigationMenu.Link
-						>
+						<NavigationMenu.Link href={resolve('/metodologia-st4s/')}>
+							{t('nav.st4sMethodology')}
+						</NavigationMenu.Link>
 						<NavigationMenu.Link href={resolve('/metodologia-avaliacao-estrategica-ai2/')}>
-							Metodologia de Avaliação Estratégica da AI²
+							{t('nav.strategicAssessmentMethodology')}
 						</NavigationMenu.Link>
 						<NavigationMenu.Link href={resolve('/legislacao-nacional/')}>
-							Legislação Nacional
+							{t('nav.nationalLegislation')}
 						</NavigationMenu.Link>
 					</li>
 				</ul>
 			</NavigationMenu.Content>
 		</NavigationMenu.Item>
 		<NavigationMenu.Item>
-			<NavigationMenu.Trigger>Sobre a Equipa</NavigationMenu.Trigger>
+			<NavigationMenu.Trigger>{t('nav.aboutTeam')}</NavigationMenu.Trigger>
 			<NavigationMenu.Content>
 				<ul class="grid w-[220px] gap-4 p-2">
 					<li>
-						<NavigationMenu.Link href={resolve('/coordenacao/')}>Coordenação</NavigationMenu.Link>
-						<NavigationMenu.Link href={resolve('/equipa-peritos/')}
-							>Equipa de Peritos</NavigationMenu.Link
-						>
+						<NavigationMenu.Link href={resolve('/coordenacao/')}>
+							{t('nav.coordination')}
+						</NavigationMenu.Link>
+						<NavigationMenu.Link href={resolve('/equipa-peritos/')}>
+							{t('nav.expertTeam')}
+						</NavigationMenu.Link>
 					</li>
 				</ul>
 			</NavigationMenu.Content>

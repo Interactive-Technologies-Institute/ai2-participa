@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button';
+	import { getLang, t } from '$lib/i18n.svelte';
 </script>
 
 <section
@@ -9,14 +10,13 @@
 		<div class="mx-auto max-w-4xl text-center">
 			<div class="mb-8 flex justify-center">
 				<img
-					src="/AI2-logo.png"
-					alt="AI² - Agência para a Investigação e Inovação"
+					src="/AI2-logo.svg"
+					alt={t('home.imgAlt')}
 					class="h-48 w-auto transition-opacity hover:opacity-80"
 				/>
 			</div>
 			<h1 class="font-title text-4xl font-bold sm:text-5xl md:text-6xl">
-				Espaço de diálogo sobre as prioridades nacionais de investigação e inovação no âmbito da
-				criação da AI²
+				{t('home.heading')}
 			</h1>
 			<div class="mt-10 flex justify-center">
 				<Button
@@ -25,7 +25,7 @@
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					Participe no Diálogo
+					{t('home.participateBtn')}
 				</Button>
 			</div>
 		</div>
@@ -34,51 +34,88 @@
 		<div class="dotted-grid-bg absolute inset-0 opacity-70"></div>
 	</div>
 </section>
+
 <section class="bg-muted/30 py-16 md:py-20">
 	<div class="typography container">
 		<div class="large mx-auto max-w-4xl">
-			<p>
-				Portugal está a definir as suas <strong
-					>prioridades nacionais de investigação e inovação</strong
-				>
-				no âmbito da criação da <strong>Agência para a Investigação e Inovação</strong> (AI²), E.P.E.
-				Para apoiar decisões estratégicas que orientarão a atuação futura da agência, está em curso uma
-				Avaliação Estratégica que abrange:
-			</p>
-			<ul>
-				<li>
-					Alocação orçamental às áreas de I&amp;D, aos domínios estratégicos e à Unidade de Promoção
-					da Inovação (UPI);
-				</li>
-				<li>Definição dos domínios estratégicos da AI², incluindo possíveis subdomínios.</li>
-			</ul>
-			<p>
-				Esta avaliação visa identificar opções estratégicas, analisar oportunidades e riscos, e
-				sustentar a elaboração do contrato-programa plurianual da AI². Este processo centra-se em
-				quatro questões essenciais:
-			</p>
-			<ul>
-				<li>
-					Que percentagem do orçamento deverá ser alocada às áreas de I&amp;D, domínios estratégicos
-					e à UPI?
-				</li>
-				<li>
-					Quantos e quais os domínios estratégicos devem integrar o contrato-programa entre o
-					Governo e a AI²?
-				</li>
-				<li>Como deverá ser distribuído o orçamento entre os domínios estratégicos?</li>
-				<li>Como deverá ser distribuído o orçamento entre as áreas de I&amp;D?</li>
-			</ul>
+			{#if getLang() === 'pt'}
+				<p>
+					Portugal está a definir as suas <strong
+						>prioridades nacionais de investigação e inovação</strong
+					>
+					no âmbito da criação da <strong>Agência para a Investigação e Inovação</strong> (AI²), E.P.E.
+					Para apoiar decisões estratégicas que orientarão a atuação futura da agência, está em curso
+					uma Avaliação Estratégica que abrange:
+				</p>
+				<ul>
+					<li>
+						Alocação orçamental às áreas de I&amp;D, aos domínios estratégicos e à Unidade de
+						Promoção da Inovação (UPI);
+					</li>
+					<li>Definição dos domínios estratégicos da AI², incluindo possíveis subdomínios.</li>
+				</ul>
+				<p>
+					Esta avaliação visa identificar opções estratégicas, analisar oportunidades e riscos, e
+					sustentar a elaboração do contrato-programa plurianual da AI². Este processo centra-se em
+					quatro questões essenciais:
+				</p>
+				<ul>
+					<li>
+						Que percentagem do orçamento deverá ser alocada às áreas de I&amp;D, domínios
+						estratégicos e à UPI?
+					</li>
+					<li>
+						Quantos e quais os domínios estratégicos devem integrar o contrato-programa entre o
+						Governo e a AI²?
+					</li>
+					<li>Como deverá ser distribuído o orçamento entre os domínios estratégicos?</li>
+					<li>Como deverá ser distribuído o orçamento entre as áreas de I&amp;D?</li>
+				</ul>
+			{:else}
+				<p>
+					Portugal is defining its <strong
+						>national research and innovation priorities</strong
+					>
+					in the context of creating the <strong>Agency for Research and Innovation</strong> (AI²), E.P.E.
+					To support strategic decisions that will guide the agency's future activities, a Strategic Assessment
+					is currently underway covering:
+				</p>
+				<ul>
+					<li>
+						Budget allocation to R&amp;D areas, strategic domains and the Innovation Promotion Unit
+						(UPI);
+					</li>
+					<li>
+						Definition of AI²'s strategic domains, including possible sub-domains.
+					</li>
+				</ul>
+				<p>
+					This assessment aims to identify strategic options, analyse opportunities and risks, and
+					support the preparation of AI²'s multi-annual programme contract. The process focuses on
+					four key questions:
+				</p>
+				<ul>
+					<li>
+						What percentage of the budget should be allocated to R&amp;D areas, strategic domains
+						and the UPI?
+					</li>
+					<li>
+						How many and which strategic domains should be included in the programme contract between
+						the Government and AI²?
+					</li>
+					<li>How should the budget be distributed among strategic domains?</li>
+					<li>How should the budget be distributed among R&amp;D areas?</li>
+				</ul>
+			{/if}
 		</div>
 	</div>
 </section>
+
 <section class="py-20 md:py-24">
 	<div class="container">
 		<div class="mx-auto max-w-5xl text-center">
 			<p class="text-lg leading-relaxed text-muted-foreground">
-				A sua participação é essencial para definir o futuro da investigação e da inovação em
-				Portugal. Participe no espaço de diálogo e contribua para o desenvolvimento científico e
-				tecnológico do país.
+				{t('home.ctaText')}
 			</p>
 			<div class="mt-8 flex justify-center">
 				<Button
@@ -87,7 +124,7 @@
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					Participar no Diálogo
+					{t('home.ctaBtn')}
 				</Button>
 			</div>
 		</div>

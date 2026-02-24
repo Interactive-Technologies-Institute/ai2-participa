@@ -3,6 +3,7 @@
 	import MainNav from '$lib/components/nav/main-nav.svelte';
 	import MobileNav from '$lib/components/nav/mobile-nav.svelte';
 	import { Button } from '$lib/components/ui/button';
+	import { getLang, toggleLang, t } from '$lib/i18n.svelte';
 </script>
 
 <header class="sticky top-0 z-50 w-full border-b bg-background">
@@ -14,8 +15,19 @@
 		</div>
 		<MainNav class="hidden lg:flex" />
 		<MobileNav class="flex lg:hidden" />
+		<!-- Language toggle -->
+		<button
+			onclick={toggleLang}
+			title={t('lang.switchTo')}
+			aria-label={t('lang.switchTo')}
+			class="flex items-center rounded border px-2 py-1 text-xs font-semibold tracking-wide transition-colors hover:bg-muted"
+		>
+			<span class={getLang() === 'pt' ? 'text-foreground' : 'text-muted-foreground'}>PT</span>
+			<span class="mx-0.5 text-muted-foreground">|</span>
+			<span class={getLang() === 'en' ? 'text-foreground' : 'text-muted-foreground'}>EN</span>
+		</button>
 		<Button href="https://ai2participa.eu.consider.it/" target="_blank" rel="noopener noreferrer">
-			Participe no Diálogo
+			{t('header.participate')}
 		</Button>
 	</div>
 </header>

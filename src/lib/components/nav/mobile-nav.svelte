@@ -4,6 +4,7 @@
 	import * as Popover from '$lib/components/ui/popover';
 	import { cn } from '$lib/utils';
 	import type { HTMLAnchorAttributes, HTMLAttributes } from 'svelte/elements';
+	import { t } from '$lib/i18n.svelte';
 
 	type NavItemProps = HTMLAnchorAttributes & {
 		content?: string;
@@ -48,7 +49,7 @@
 					)}
 				></span>
 			</div>
-			<span class="sr-only">Toggle Menu</span>
+			<span class="sr-only">{t('nav.toggleMenu')}</span>
 		</div>
 	</Popover.Trigger>
 	<Popover.Content
@@ -60,56 +61,56 @@
 		preventScroll
 	>
 		<div class="flex flex-col gap-5 overflow-auto px-6 py-6">
-			{@render NavItem({ href: resolve('/relatorios/'), content: 'Relatórios' })}
+			{@render NavItem({ href: resolve('/relatorios/'), content: t('nav.reports') })}
 			<div class="flex flex-col gap-2">
-				<div class="text-sm font-medium text-muted-foreground">Estratégia de Participação</div>
+				<div class="text-sm font-medium text-muted-foreground">{t('nav.participationStrategy')}</div>
 				<div class="flex flex-col gap-2">
 					{@render NavItem({
 						href: resolve('/participacao-publica/'),
-						content: 'Participação Pública'
+						content: t('nav.publicParticipation')
 					})}
 					{@render NavItem({
 						href: resolve('/metodologia-participacao-publica/'),
-						content: 'Metodologia de Participação Pública'
+						content: t('nav.publicParticipationMethodology')
 					})}
 					{@render NavItem({
 						href: resolve('/comissao-acompanhamento/'),
-						content: 'Comissão de Acompanhamento'
+						content: t('nav.advisoryCommittee')
 					})}
 					{@render NavItem({
 						href: resolve('/reunioes-entidades/'),
-						content: 'Reuniões com Entidades'
+						content: t('nav.stakeholderMeetings')
 					})}
-					{@render NavItem({ href: resolve('/mesas-tematicas/'), content: 'Mesas Temáticas' })}
+					{@render NavItem({ href: resolve('/mesas-tematicas/'), content: t('nav.thematicTables') })}
 					{@render NavItem({
 						href: resolve('/conferencias-reunioes-descentralizadas/'),
-						content: 'Conferências e Reuniões Descentralizadas'
+						content: t('nav.decentralizedConferences')
 					})}
 					{@render NavItem({
 						href: resolve('/iniciativas-bottom-up/'),
-						content: 'Iniciativas Bottom-up'
+						content: t('nav.bottomUpInitiatives')
 					})}
 				</div>
 			</div>
 			<div class="flex flex-col gap-2">
-				<div class="text-sm font-medium text-muted-foreground">O que é</div>
+				<div class="text-sm font-medium text-muted-foreground">{t('nav.whatIsIt')}</div>
 				<div class="flex flex-col gap-2">
-					{@render NavItem({ href: resolve('/metodologia-st4s/'), content: 'Metodologia ST4S' })}
+					{@render NavItem({ href: resolve('/metodologia-st4s/'), content: t('nav.st4sMethodology') })}
 					{@render NavItem({
 						href: resolve('/metodologia-avaliacao-estrategica-ai2/'),
-						content: 'Metodologia de Avaliação Estratégica da AI²'
+						content: t('nav.strategicAssessmentMethodology')
 					})}
 					{@render NavItem({
 						href: resolve('/legislacao-nacional/'),
-						content: 'Legislação Nacional'
+						content: t('nav.nationalLegislation')
 					})}
 				</div>
 			</div>
 			<div class="flex flex-col gap-2">
-				<div class="text-sm font-medium text-muted-foreground">Sobre a Equipa</div>
+				<div class="text-sm font-medium text-muted-foreground">{t('nav.aboutTeam')}</div>
 				<div class="flex flex-col gap-2">
-					{@render NavItem({ href: resolve('/coordenacao/'), content: 'Coordenação' })}
-					{@render NavItem({ href: resolve('/equipa-peritos/'), content: 'Equipa de Peritos' })}
+					{@render NavItem({ href: resolve('/coordenacao/'), content: t('nav.coordination') })}
+					{@render NavItem({ href: resolve('/equipa-peritos/'), content: t('nav.expertTeam') })}
 				</div>
 			</div>
 		</div>
