@@ -71,7 +71,7 @@
 				designed to ensure an open, informed and inclusive process, involving actors from across the
 				research and innovation ecosystem.
 			</p>
-			<h2>Principles guiding participation</h2>
+			<h2>Principles guiding the participation</h2>
 			<ul>
 				<li>
 					<strong>Transparency and information sharing</strong> among all key stakeholder groups.
@@ -100,27 +100,27 @@
 				of key stakeholders:
 			</p>
 			<ul>
-				<li><strong>Dedicated digital page</strong>, updated throughout the entire process.</li>
+				<li><strong>Dedicated website</strong>, updated throughout the entire process.</li>
 				<li>
-					<strong>Online interactive platform</strong> for continuous contributions, dialogues and collective
+					<strong>Interactive participatory platform</strong> for continuous contributions, dialogues and collective
 					learning.
 				</li>
 				<li>
 					<strong>Advisory Committee</strong> with leading figures from the scientific and innovation community.
 				</li>
 				<li>
-					<strong>Meetings with strategic entities</strong> to gather perspectives and contributions.
+					<strong>Targeted stakeholder meetings</strong> to gather perspectives and contributions.
 				</li>
 				<li>
-					<strong>Thematic tables</strong> with representatives from the academic community, scientific and
+					<strong>Thematic roundtables</strong> with representatives from the academic community, scientific and
 					technological system, business sector, public administration and civil society.
 				</li>
 				<li>
-					<strong>Decentralized conferences and workshops</strong> across various regions to present the
+					<strong>Conferences and decentralised workshops</strong> across various regions to present the
 					process and gather contributions in real time.
 				</li>
 				<li>
-					<strong>Bottom-up initiatives</strong>, spontaneously organised by SCTI actors.
+					<strong>Bottom-up initiatives</strong>, spontaneously organised by actors across the National Science, Technology and Innovation System.
 				</li>
 			</ul>
 		{/if}

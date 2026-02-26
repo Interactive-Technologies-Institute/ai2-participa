@@ -38,7 +38,7 @@
 			</p>
 		{:else}
 			<p>
-				The methodology provides for decentralized conferences and workshops, open to all interested
+				The methodology provides for conferences and decentralised workshops, open to all interested
 				parties upon registration. These sessions aim to present the process, clarify doubts and
 				gather contributions in real time.
 			</p>
@@ -52,12 +52,12 @@
 			</p>
 			<ul>
 				<li>
-					Five workshops in May 2026 to address strategic focusing (Funchal, Évora, Coimbra,
+					Five workshops in May 2026 to address strategic focus (Funchal, Évora, Coimbra,
 					Bragança, Porto).
 				</li>
 				<li>
-					Five workshops in June–July 2026 to define and discuss strategic options and their
-					assessment of opportunities and risks (Ponta Delgada, Aveiro, Covilhã, Braga, Faro).
+					Five workshops in June–July 2026 to define and discuss strategic options and assessment of
+					their opportunities and risks (Ponta Delgada, Aveiro, Covilhã, Braga, Faro).
 				</li>
 				<li>Preliminary presentation of results (October 2026).</li>
 				<li>Final conference (November/December 2026).</li>

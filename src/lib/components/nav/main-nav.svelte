@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { asset, resolve } from '$app/paths';
 	import * as NavigationMenu from '$lib/components/ui/navigation-menu';
 	import { navigationMenuTriggerStyle } from '$lib/components/ui/navigation-menu/navigation-menu-trigger.svelte';
 	import type { HTMLAttributes } from 'svelte/elements';
@@ -15,10 +15,8 @@
 <NavigationMenu.Root class={className} viewport={false}>
 	<NavigationMenu.List>
 		<NavigationMenu.Item>
-			<NavigationMenu.Link>
-				{#snippet child()}
-					<a href={resolve('/relatorios/')} class={navigationMenuTriggerStyle()}>{t('nav.reports')}</a>
-				{/snippet}
+			<NavigationMenu.Link href={resolve('/relatorios/')}>
+				{t('nav.reports')}
 			</NavigationMenu.Link>
 		</NavigationMenu.Item>
 		<NavigationMenu.Item>
@@ -26,6 +24,9 @@
 			<NavigationMenu.Content>
 				<ul class="grid w-[260px] gap-4 p-2">
 					<li>
+						<NavigationMenu.Link href={resolve('/apresentacao/')}>
+							{t('nav.reports.presentations')}
+						</NavigationMenu.Link>
 						<NavigationMenu.Link href={resolve('/participacao-publica/')}>
 							{t('nav.publicParticipation')}
 						</NavigationMenu.Link>

@@ -75,13 +75,13 @@
 					Issuing opinions on the design and implementation of the strategic assessment methodology.
 				</li>
 				<li>
-					Monitoring the implementation of the process and issuing opinions at its different stages.
+					Monitoring the implementation of the process and issuing opinions at its different phases.
 				</li>
 			</ul>
 			<p>
-				The Advisory Committee has access to all information and documentation necessary for the
-				exercise of its functions and may participate in meetings, working sessions and other
-				initiatives whenever necessary.
+				The Advisory Committee has access to all information and documentation necessary to carry out
+				its functions and may participate in meetings, working sessions and other initiatives whenever
+				necessary.
 			</p>
 			<h2>{t('page.advisoryCommittee.interaction')}</h2>
 			<p>

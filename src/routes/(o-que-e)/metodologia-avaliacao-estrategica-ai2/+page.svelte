@@ -106,13 +106,13 @@
 				<li>Budget distribution among R&amp;D areas.</li>
 			</ul>
 			<p>
-				The methodology was built with contributions from SCTI entities, incorporating relevant
-				suggestions throughout the process.
+				Contributions from entities across the National Science, Technology and Innovation System,
+				incorporating relevant suggestions throughout the process.
 			</p>
 			<h2>{t('page.strategicAssessment.anchors')}</h2>
 			<ul>
 				<li>
-					<strong>Objective:</strong> to value fundamental and applied research, strengthening the link between
+					<strong>Objective:</strong> to value basic and applied research, strengthening the link between
 					knowledge, innovation and economic, social, cultural and environmental value.
 				</li>
 				<li>
@@ -124,19 +124,19 @@
 					transparency and participation; coherence and efficiency; accountability and continuous evaluation.
 				</li>
 				<li>
-					<strong>Pillars:</strong> stable multi-annual budget; fundamental research; top-down priorities;
-					research-innovation link; infrastructures; scientific employment and qualification.
+					<strong>Pillars:</strong> stable multi-annual budget; basic research; top-down priorities;
+					research-innovation relationship; infrastructures; scientific employment and qualification.
 				</li>
 			</ul>
 			<h2>{t('page.strategicAssessment.phases')}</h2>
 			<ol>
 				<li>
-					<strong>Strategic focusing:</strong> participatory definition of priorities, construction of the Strategic
+					<strong>Strategic focus:</strong> participatory definition of priorities, development of the Strategic
 					Assessment Framework with CDFs, criteria and indicators, and identification of six key themes.
 				</li>
 				<li>
 					<strong>Identification of strategic options:</strong> participatory definition of alternatives for
-					budget allocation and strategic domains, integrating contributions from thematic tables and technical
+					budget allocation and strategic domains, integrating contributions from thematic roundtables and technical
 					discussions.
 				</li>
 				<li>
@@ -151,9 +151,9 @@
 			<h2>{t('page.strategicAssessment.participation')}</h2>
 			<p>Participation by relevant stakeholders is continuous, combining:</p>
 			<ul>
-				<li>Online public consultation and contributions at thematic tables and workshops.</li>
-				<li>Interaction with SCTI experts and stakeholders and civil society.</li>
-				<li>Decentralized sessions by region, including open conferences and workshops.</li>
+				<li>Online public consultation and contributions at thematic roundtables.</li>
+				<li>Interaction with experts and stakeholders across the National Science, Technology and Innovation System and civil society.</li>
+				<li>Decentralized sessions across the regions, including open conferences and workshops.</li>
 			</ul>
 		{/if}
 		<div class="not-typography mt-10">

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { asset, resolve } from '$app/paths';
 	import { buttonVariants } from '$lib/components/ui/button';
 	import * as Popover from '$lib/components/ui/popover';
 	import { cn } from '$lib/utils';
@@ -61,10 +61,20 @@
 		preventScroll
 	>
 		<div class="flex flex-col gap-5 overflow-auto px-6 py-6">
-			{@render NavItem({ href: resolve('/relatorios/'), content: t('nav.reports') })}
+			<div class="flex flex-col gap-2">
+				<div class="text-sm font-medium text-muted-foreground">{t('nav.reports')}</div>
+				<div class="flex flex-col gap-2">
+					{@render NavItem({ href: resolve('/relatorios/'), content: t('nav.reports') })}
+					{@render NavItem({ href: asset('/docs/RelatMetod_PT.pdf'), content: t('nav.reports.methodologicalReport') })}
+				</div>
+			</div>
 			<div class="flex flex-col gap-2">
 				<div class="text-sm font-medium text-muted-foreground">{t('nav.participationStrategy')}</div>
 				<div class="flex flex-col gap-2">
+					{@render NavItem({
+						href: resolve('/apresentacao/'),
+						content: t('nav.reports.presentations')
+					})}
 					{@render NavItem({
 						href: resolve('/participacao-publica/'),
 						content: t('nav.publicParticipation')

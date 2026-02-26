@@ -13,7 +13,12 @@
 			</p>
 			<ul>
 				<li>
-					Documento com a <strong>metodologia de avaliação estratégica</strong> (link a disponibilizar);
+					Documento com a <strong>metodologia de avaliação estratégica</strong> (<a
+						href="/docs/RelatMetod_PT.pdf"
+						target="_blank"
+						rel="noreferrer"
+						>link</a
+					>);
 				</li>
 				<li>
 					<strong>Relatório de fatores críticos para a decisão (FCD)</strong>, incluindo o quadro de
@@ -47,7 +52,12 @@
 			</p>
 			<ul>
 				<li>
-					Document with the <strong>strategic assessment methodology</strong> (link to be provided);
+					Document with the <strong>strategic assessment methodology</strong> (<a
+						href="/docs/RelatMetod_PT.pdf"
+						target="_blank"
+						rel="noreferrer"
+						>link</a
+					>);
 				</li>
 				<li>
 					<strong>Report on critical decision factors (CDF)</strong>, including the strategic reference

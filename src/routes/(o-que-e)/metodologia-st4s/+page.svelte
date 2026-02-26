@@ -67,14 +67,14 @@
 			</p>
 			<p>
 				The methodology begins by defining, through a participatory process, the objective, vision,
-				principles and strategic pillars for the future of research and innovation in Portugal, and
+				strategic principles and pillars for the future of research and innovation in Portugal, and
 				from there identifies strategic pathways to achieve them. The entire process involves
 				experts, relevant stakeholders and an independent Advisory Committee.
 			</p>
 			<h2>{t('page.st4s.threePhases')}</h2>
 			<ol>
 				<li>
-					<strong>Focusing</strong>
+					<strong>Focus</strong>
 					<p>
 						Identifying what is a priority to assess, defining the Critical Decision Factors (CDF) and
 						the strategic assessment framework.

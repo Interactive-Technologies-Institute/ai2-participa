@@ -60,7 +60,7 @@
 			</p>
 		{:else}
 			<p>
-				PLANAPP globally coordinates the Strategic Assessment process, in coordination with the
+				PLANAPP provides overall coordination of the Strategic Assessment process, in articulation with the
 				Directorate-General for the Economy (DGE) and the Directorate-General for Studies, Planning
 				and Evaluation (DGEPA), ensuring the methodological design, organisation of public
 				participation and technical consolidation of results.

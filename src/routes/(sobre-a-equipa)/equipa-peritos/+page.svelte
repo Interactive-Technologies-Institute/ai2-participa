@@ -98,9 +98,9 @@
 			</p>
 		{:else}
 			<p>
-				The AI² Strategic Assessment is supported by a team of experts from FCT and ANI who will
-				contribute to strategic diagnostics, trend analyses and assessment of strategic options, as
-				well as facilitation of thematic tables.
+				The AI² Strategic Assessment is supported by a team of experts from the National Innovation Agency, S. A. (ANI) and the Foundation for Science and Technology, I. P. (FCT) who will
+				contribute to strategic diagnoses, trend analyses and assessment of strategic options, as
+				well as facilitation of thematic roundtables.
 			</p>
 			<p>
 				Coordinated by Professor Maria do Rosário Partidário, the experts are organised by key themes

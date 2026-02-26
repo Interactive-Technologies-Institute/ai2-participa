@@ -8,7 +8,7 @@ export const translations: Record<Lang, Record<string, string>> = {
 
 		// Site
 		'site.description':
-			'Espaço de participação sobre a Avaliação Estratégica para a definição das prioridades nacionais de investigação e inovação no âmbito da criação da AI².',
+			'Espaço de diálogo sobre a Avaliação Estratégica para a definição das prioridades nacionais de investigação e inovação no âmbito da criação da AI².',
 
 		// Header
 		'header.participate': 'Participe no Diálogo',
@@ -21,7 +21,7 @@ export const translations: Record<Lang, Record<string, string>> = {
 		'nav.advisoryCommittee': 'Comissão de Acompanhamento',
 		'nav.stakeholderMeetings': 'Reuniões com Entidades',
 		'nav.thematicTables': 'Mesas Temáticas',
-		'nav.decentralizedConferences': 'Conferências e Reuniões Descentralizadas',
+		'nav.decentralizedConferences': 'Conferências e Workshops Descentralizados',
 		'nav.bottomUpInitiatives': 'Iniciativas Bottom-up',
 		'nav.whatIsIt': 'O que é',
 		'nav.st4sMethodology': 'Metodologia ST4S',
@@ -30,11 +30,13 @@ export const translations: Record<Lang, Record<string, string>> = {
 		'nav.aboutTeam': 'Sobre a Equipa',
 		'nav.coordination': 'Coordenação',
 		'nav.expertTeam': 'Equipa de Peritos',
+		'nav.reports.presentations': 'Apresentação Pública',
+		'nav.reports.methodologicalReport': 'Relatório Metodologia',
 		'nav.toggleMenu': 'Alternar Menu',
 
 		// Footer
 		'footer.description':
-			'Espaço de participação sobre a Avaliação Estratégica para a definição das prioridades nacionais de investigação e inovação no âmbito da criação da AI².',
+		'Espaço de diálogo sobre a Avaliação Estratégica para a definição das prioridades nacionais de investigação e inovação no âmbito da criação da AI².',
 		'footer.contactPrompt': 'Dúvidas ou sugestões?',
 		'footer.contactLink': 'Contacte-nos',
 		'footer.logoAltPlanapp': 'Logo PLANAPP',
@@ -56,12 +58,13 @@ export const translations: Record<Lang, Record<string, string>> = {
 		'home.ctaBtn': 'Participar no Diálogo',
 
 		// Page titles
+		'page.publicPresentation.title': 'Apresentação Pública',
 		'page.publicParticipation.title': 'Participação Pública',
 		'page.publicParticipationMethodology.title': 'Metodologia de Participação Pública',
 		'page.advisoryCommittee.title': 'Comissão de Acompanhamento',
 		'page.stakeholderMeetings.title': 'Reuniões com Entidades',
 		'page.thematicTables.title': 'Mesas Temáticas',
-		'page.decentralizedConferences.title': 'Conferências e Reuniões Descentralizadas',
+		'page.decentralizedConferences.title': 'Conferências e Workshops Descentralizados',
 		'page.bottomUpInitiatives.title': 'Iniciativas Bottom-up',
 		'page.reports.title': 'Relatórios',
 		'page.st4sMethodology.title': 'Metodologia ST4S',
@@ -111,7 +114,7 @@ export const translations: Record<Lang, Record<string, string>> = {
 
 		// Site
 		'site.description':
-			'Participation space on the Strategic Assessment for defining national research and innovation priorities in the context of creating AI².',
+			'Dialogue space on the Strategic Assessment for defining national research and innovation priorities in the context of creating AI².',
 
 		// Header
 		'header.participate': 'Participate in the Dialogue',
@@ -122,9 +125,9 @@ export const translations: Record<Lang, Record<string, string>> = {
 		'nav.publicParticipation': 'Public Participation',
 		'nav.publicParticipationMethodology': 'Public Participation Methodology',
 		'nav.advisoryCommittee': 'Advisory Committee',
-		'nav.stakeholderMeetings': 'Stakeholder Meetings',
-		'nav.thematicTables': 'Thematic Tables',
-		'nav.decentralizedConferences': 'Decentralized Conferences and Meetings',
+		'nav.stakeholderMeetings': 'Targeted Stakeholder Meetings',
+		'nav.thematicTables': 'Thematic Roundtables',
+		'nav.decentralizedConferences': 'Conferences and Decentralised Workshops',
 		'nav.bottomUpInitiatives': 'Bottom-up Initiatives',
 		'nav.whatIsIt': 'What it is',
 		'nav.st4sMethodology': 'ST4S Methodology',
@@ -133,11 +136,13 @@ export const translations: Record<Lang, Record<string, string>> = {
 		'nav.aboutTeam': 'About the Team',
 		'nav.coordination': 'Coordination',
 		'nav.expertTeam': 'Expert Team',
+		'nav.reports.presentations': 'Public Presentation',
+		'nav.reports.methodologicalReport': 'Methodological Report',
 		'nav.toggleMenu': 'Toggle Menu',
 
 		// Footer
 		'footer.description':
-			'Participation space on the Strategic Assessment for defining national research and innovation priorities in the context of creating AI².',
+		'Dialogue space on the Strategic Assessment for defining national research and innovation priorities in the context of creating AI².',
 		'footer.contactPrompt': 'Questions or suggestions?',
 		'footer.contactLink': 'Contact us',
 		'footer.logoAltPlanapp': 'PLANAPP Logo',
@@ -159,12 +164,13 @@ export const translations: Record<Lang, Record<string, string>> = {
 		'home.ctaBtn': 'Join the Dialogue',
 
 		// Page titles
+		'page.publicPresentation.title': 'Public Presentation',
 		'page.publicParticipation.title': 'Public Participation',
 		'page.publicParticipationMethodology.title': 'Public Participation Methodology',
 		'page.advisoryCommittee.title': 'Advisory Committee',
-		'page.stakeholderMeetings.title': 'Stakeholder Meetings',
-		'page.thematicTables.title': 'Thematic Tables',
-		'page.decentralizedConferences.title': 'Decentralized Conferences and Meetings',
+		'page.stakeholderMeetings.title': 'Targeted Stakeholder Meetings',
+		'page.thematicTables.title': 'Thematic Roundtables',
+		'page.decentralizedConferences.title': 'Conferences and Decentralised Workshops',
 		'page.bottomUpInitiatives.title': 'Bottom-up Initiatives',
 		'page.reports.title': 'Reports',
 		'page.st4sMethodology.title': 'ST4S Methodology',
@@ -204,6 +210,6 @@ export const translations: Record<Lang, Record<string, string>> = {
 		'expertTeam.s3': 'Funding model and sources',
 		'expertTeam.s4': 'Relationship between research and innovation',
 		'expertTeam.s5': 'R&D Areas',
-		'expertTeam.s6': 'Infrastructures and scientific and technological employment'
+		'expertTeam.s6': 'Scientific and technological infrastructures and employment'
 	}
 };
