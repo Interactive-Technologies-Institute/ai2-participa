@@ -87,7 +87,7 @@
 		</p>
 
 		<p>
-			<strong>15h00</strong> – <a href="/docs/AI2_ROSARIO_PARTIDARIO_ENG" target="_blank" rel="noreferrer">Apresentação da metodologia para a definição dos domínios estratégicos
+			<strong>15h00</strong> – <a href="/docs/AI2_ROSARIO_PARTIDARIO_ENG.pdf" target="_blank" rel="noreferrer">Apresentação da metodologia para a definição dos domínios estratégicos
 			e para a alocação orçamental da AI² </a> - 				Maria do Rosário Partidário – Coordenadora da Equipa de Projeto -  Instituto Superior Técnico
 		</p>
 
