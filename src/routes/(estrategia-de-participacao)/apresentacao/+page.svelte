@@ -6,15 +6,6 @@
 <PageHeader title={t('page.publicPresentation.title')} />
 <div class="container my-12 md:my-24">
 	<div class="typography">
-		<p>
-			<strong>Apresentação pública da metodologia para a definição dos domínios estratégicos e para a
-				alocação orçamental da AI²</strong>
-			 (<a
-						href="/docs/Apresentacao_ENG.pdf"
-						target="_blank"
-						rel="noreferrer"
-						>link</a>);
-		</p>
 		<p>24 de fevereiro de 2026 | Técnico Innovation Center | Lisboa</p>
 
 		<h2>Programa</h2>

@@ -88,7 +88,7 @@
 						target="_blank"
 						rel="noreferrer"
 						>link</a
-					>);
+					>)
 			</p>
 		{:else}
 			<p>
@@ -171,7 +171,7 @@
 						target="_blank"
 						rel="noreferrer"
 						>link</a
-					>);
+					>)
 			</p>
 		{/if}
 	</div>
