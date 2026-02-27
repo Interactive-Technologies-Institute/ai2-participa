@@ -81,6 +81,15 @@
 				<li>Interação com peritos e stakeholders do SNCTI e sociedade civil.</li>
 				<li>Sessões descentralizadas por região, incluindo conferências e workshops abertos.</li>
 			</ul>
+			<hr />
+			<p>
+						Documento com a <strong>metodologia de avaliação estratégica</strong> (<a
+						href="/docs/RelatMetod_PT.pdf"
+						target="_blank"
+						rel="noreferrer"
+						>link</a
+					>);
+			</p>
 		{:else}
 			<p>
 				The AI² Strategic Assessment aims to support decisions on national research and innovation
@@ -155,9 +164,15 @@
 				<li>Interaction with experts and stakeholders across the National Science, Technology and Innovation System and civil society.</li>
 				<li>Decentralized sessions across the regions, including open conferences and workshops.</li>
 			</ul>
+			<hr />
+			<p>
+						Document with the <strong>strategic assesment methodology (in PT)</strong> (<a
+						href="/docs/RelatMetod_PT.pdf"
+						target="_blank"
+						rel="noreferrer"
+						>link</a
+					>);
+			</p>
 		{/if}
-		<div class="not-typography mt-10">
-			<Button variant="outline" href="#" disabled>{t('page.strategicAssessment.viewDoc')}</Button>
-		</div>
 	</div>
 </div>

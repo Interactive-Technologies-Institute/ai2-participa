@@ -49,15 +49,8 @@
 				com uma decisão final top-down, garantindo rigor técnico, envolvimento plural e orientação
 				estratégica para a definição da alocação orçamental e dos domínios estratégicos da AI².
 			</p>
-						<hr />
-						<p>
-						Documento com a <strong>metodologia de avaliação estratégica</strong> (<a
-						href="/docs/RelatMetod_PT.pdf"
-						target="_blank"
-						rel="noreferrer"
-						>link</a
-					>);
-			</p>
+			
+			<hr />
 
 			<p>
 				<sup>1</sup>
@@ -110,14 +103,6 @@
 				and strategic orientation for defining AI²'s budget allocation and strategic domains.
 			</p>
 			<hr />
-			<p>
-						Document with the <strong>strategic assesment methodology (in PT)</strong> (<a
-						href="/docs/RelatMetod_PT.pdf"
-						target="_blank"
-						rel="noreferrer"
-						>link</a
-					>);
-			</p>
 			<p>
 				<sup>1</sup>
 				Partidário, M. R. (2021).
