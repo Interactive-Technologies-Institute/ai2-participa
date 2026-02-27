@@ -34,21 +34,15 @@
 		<p><strong>11h20</strong> – O estado da Investigação e da Inovação em Portugal - Instrumentos, mecanismos de financiamento e ecossistema de Investigação e Inovação</p>
 		<ul>
 			<li>
-				Raúl Fangueiro – Membro do Conselho Nacional de Ciência, Tecnologia e Inovação - Universidade do Minho
+				<a href="/docs/AI2_RAUL_FANGUEIRO_CNCTI.pdf" target="_blank" rel="noreferrer">Raúl Fangueiro</a> – Membro do Conselho Nacional de Ciência, Tecnologia e Inovação - Universidade do Minho
 			</li>
-		<li><a href="/docs/AI2_RAUL_FANGUEIRO_CNCTI.pdf" target="_blank" rel="noreferrer">Análise do Ecossistema Científico, Tecnológico e de Inovação Nacional</a></li>
 			<li>
-				Adélio Mendes – Membro do Conselho Nacional de Ciência, Tecnologia e Inovação - Universidade do Porto
+				<a href="/docs/AI2_ADELIO_MENDES_CNCTI.pdf" target="_blank" rel="noreferrer">Adélio Mendes</a> – Membro do Conselho Nacional de Ciência, Tecnologia e Inovação - Universidade do Porto
 			</li>
-		<li><a href="/docs/AI2_ADELIO_MENDES_CNCTI.pdf" target="_blank" rel="noreferrer">Análise do Ecossistema Científico, Tecnológico e de Inovação Nacional</a></li>
-		</ul>
-		<ul>
 			<li>
-				Eugénio Campos Ferreira – Coordenador do Grupo de Trabalho de Análise do Ecossistema
+				<a href="/docs/AI2_EUGENIO_CAMPOS_FERREIRA_DIAGNOSTICO_QUANTITATIVO.pdf" target="_blank" rel="noreferrer">Eugénio Campos Ferreira</a> – Coordenador do Grupo de Trabalho de Análise do Ecossistema
 				Nacional de Investigação e Inovação - Universidade do Minho
 			</li>
-			<li>		<p><a href="/docs/AI2_EUGENIO_CAMPOS_FERREIRA_DIAGNOSTICO_QUANTITATIVO.pdf" target="_blank" rel="noreferrer">Análise do Ecossistema Científico, Tecnológico e de Inovação Nacional</a></p>
-</li>
 		</ul>
 
 		<p><strong>12h10</strong> – Debate aberto ao público</p>

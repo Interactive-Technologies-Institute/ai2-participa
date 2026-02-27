@@ -1,16 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" fill="white"/>
-  
-  <!-- AI text -->
-  <text x="8" y="44" font-family="Arial, Helvetica, sans-serif" 
-        font-size="40" font-weight="bold" fill="#0b0d3b">ai</text>
-  
-  <!-- Superscript 2 -->
-  <text x="40" y="22" font-family="Arial, Helvetica, sans-serif" 
-        font-size="22" font-weight="bold" fill="#0b0d3b">2</text>
-  
-  <!-- Accent squares -->
-  <rect x="34" y="6" width="8" height="8" fill="#2ad1c9"/>
-  <rect x="32" y="40" width="8" height="8" fill="#6bdc3c"/>
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+
+ <!-- AI text -->
+ <!-- Superscript 2 -->
+ <!-- Accent squares -->
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" fill="white" height="64" width="64"/>
+  <text id="svg_2" fill="#0b0d3b" font-weight="bold" font-size="40" font-family="Arial, Helvetica, sans-serif" y="44.375" x="7.5">ai</text>
+  <text id="svg_3" fill="#0b0d3b" font-weight="bold" font-size="22" font-family="Arial, Helvetica, sans-serif" y="23.62499" x="36.50002">2</text>
+  <rect id="svg_4" fill="#2ad1c9" height="8" width="8" y="15.62495" x="24.75005"/>
+  <rect id="svg_5" fill="#6bdc3c" height="8" width="8" y="44.62498" x="29.87501"/>
+ </g>
 </svg>
