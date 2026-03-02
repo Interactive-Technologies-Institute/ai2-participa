@@ -1,24 +1,24 @@
 <script lang="ts">
+	import Logo from '$lib/components/logo.svelte';
 	import { Button } from '$lib/components/ui/button';
 	import { getLang, t } from '$lib/i18n.svelte';
 </script>
 
-<section
-	class="relative overflow-hidden bg-gradient-to-br from-background/60 to-primary/10 py-20 md:py-32"
->
+<svelte:head>
+	<title>AI²Participa</title>
+	<meta name="title" content="AI²Participa" />
+	<meta property="og:title" content="AI²Participa" />
+	<meta name="twitter:title" content="AI²Participa" />
+</svelte:head>
+
+<section class="relative overflow-hidden bg-background py-20 md:py-32">
 	<div class="relative z-10 container">
-		<div class="mx-auto max-w-4xl text-center">
-			<div class="mb-8 flex justify-center">
-				<img
-					src="/AI2-logo.svg"
-					alt={t('home.imgAlt')}
-					class="h-48 w-auto transition-opacity hover:opacity-80"
-				/>
-			</div>
+		<div class="mx-auto flex max-w-4xl flex-col items-center gap-8 text-center">
+			<Logo class="h-48 w-auto" />
 			<h1 class="font-title text-4xl font-bold sm:text-5xl md:text-6xl">
 				{t('home.heading')}
 			</h1>
-			<div class="mt-10 flex justify-center">
+			<div class="flex justify-center">
 				<Button
 					size="lg"
 					href="https://ai2participa.eu.consider.it/"
@@ -73,9 +73,7 @@
 				</ul>
 			{:else}
 				<p>
-					Portugal is defining its <strong
-						>national research and innovation priorities</strong
-					>
+					Portugal is defining its <strong>national research and innovation priorities</strong>
 					in the context of creating the <strong>Agency for Research and Innovation</strong> (AI²), E.P.E.
 					To support strategic decisions that will guide the agency's future activities, a Strategic Assessment
 					is currently underway covering:
@@ -85,9 +83,7 @@
 						Budget allocation to R&amp;D areas, strategic domains and the Innovation Promotion Unit
 						(UPI);
 					</li>
-					<li>
-						Definition of AI²'s strategic domains, including possible sub-domains.
-					</li>
+					<li>Definition of AI²'s strategic domains, including possible sub-domains.</li>
 				</ul>
 				<p>
 					This assessment aims to identify strategic options, analyse opportunities and risks, and
@@ -100,8 +96,8 @@
 						and the UPI?
 					</li>
 					<li>
-						How many and which strategic domains should be included in the programme contract between
-						the Government and AI²?
+						How many and which strategic domains should be included in the programme contract
+						between the Government and AI²?
 					</li>
 					<li>How should the budget be distributed among strategic domains?</li>
 					<li>How should the budget be distributed among R&amp;D areas?</li>

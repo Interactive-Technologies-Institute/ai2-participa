@@ -6,6 +6,18 @@
 <PageHeader title={t('page.publicPresentation.title')} />
 <div class="container my-12 md:my-24">
 	<div class="typography">
+		<p>
+			<strong
+				>Apresentação pública da metodologia para a definição dos domínios estratégicos e para a
+				alocação orçamental da AI²</strong
+			>
+			 (<a
+						href="/docs/Apresentacao_ENG.pdf"
+						target="_blank"
+						rel="noreferrer"
+						>link</a
+					>);
+		</p>
 		<p>24 de fevereiro de 2026 | Técnico Innovation Center | Lisboa</p>
 
 		<h2>Programa</h2>
@@ -15,90 +27,160 @@
 		<p><strong>10h00</strong> – Sessão de Abertura</p>
 		<ul>
 			<li>
-				Fernando Alexandre - Ministro da Educação, Ciência e Inovação
+				Fernando Alexandre
+				<ul>
+					<li>Ministro da Educação, Ciência e Inovação</li>
+				</ul>
 			</li>
 		</ul>
 
 		<p>
-			<strong>10h35</strong> – <a href="/docs/AI2_ALESSANDRA_COLECCHIA_OCDE.pdf" target="_blank" rel="noreferrer">Science, Technology and Innovation Outlook 2025 – Driving change in a
-			shifting landscape</a>
+			<strong>10h35</strong> – Science, Technology and Innovation Outlook 2025 – Driving change in a
+			shifting landscape
 		</p>
 		<ul>
 			<li>
-				Alessandra Colecchia - Chefe da Divisão de Política de Ciência e Tecnologia da OCDE
+				Alessandra Colecchia
+				<ul>
+					<li>Chefe da Divisão de Política de Ciência e Tecnologia da OCDE</li>
+				</ul>
 			</li>
 		</ul>
 
 		<p><strong>11h00</strong> – Coffee break</p>
 
-		<p><strong>11h20</strong> – O estado da Investigação e da Inovação em Portugal - Instrumentos, mecanismos de financiamento e ecossistema de Investigação e Inovação</p>
+		<p><strong>11h20</strong> – O estado da Investigação e da Inovação em Portugal</p>
+		<p>Instrumentos, mecanismos de financiamento e ecossistema de Investigação e Inovação</p>
 		<ul>
 			<li>
-				<a href="/docs/AI2_RAUL_FANGUEIRO_CNCTI.pdf" target="_blank" rel="noreferrer">Raúl Fangueiro</a> – Membro do Conselho Nacional de Ciência, Tecnologia e Inovação - Universidade do Minho
+				Raúl Fangueiro – Membro do Conselho Nacional de Ciência, Tecnologia e Inovação
+				<ul>
+					<li>Universidade do Minho</li>
+				</ul>
 			</li>
 			<li>
-				<a href="/docs/AI2_ADELIO_MENDES_CNCTI.pdf" target="_blank" rel="noreferrer">Adélio Mendes</a> – Membro do Conselho Nacional de Ciência, Tecnologia e Inovação - Universidade do Porto
+				Adélio Mendes – Membro do Conselho Nacional de Ciência, Tecnologia e Inovação
+				<ul>
+					<li>Universidade do Porto</li>
+				</ul>
 			</li>
+		</ul>
+		<p>Análise do Ecossistema Científico, Tecnológico e de Inovação Nacional</p>
+		<ul>
 			<li>
-				<a href="/docs/AI2_EUGENIO_CAMPOS_FERREIRA_DIAGNOSTICO_QUANTITATIVO.pdf" target="_blank" rel="noreferrer">Eugénio Campos Ferreira</a> – Coordenador do Grupo de Trabalho de Análise do Ecossistema
-				Nacional de Investigação e Inovação - Universidade do Minho
+				Eugénio Campos Ferreira – Coordenador do Grupo de Trabalho de Análise do Ecossistema
+				Nacional de Investigação e Inovação
+				<ul>
+					<li>Universidade do Minho</li>
+				</ul>
 			</li>
 		</ul>
 
 		<p><strong>12h10</strong> – Debate aberto ao público</p>
 		<ul>
 			<li>
-				Hermínia Vilar - Vice-Presidente do CRUP e Reitora da Universidade de Évora
+				Hermínia Vilar
+				<ul>
+					<li>Vice-Presidente do CRUP e Reitora da Universidade de Évora</li>
+				</ul>
 			</li>
 			<li>
-				Orlando Rodrigues - Comissão Permanente do CCISP e Presidente do Instituto Politécnico de Bragança
+				Orlando Rodrigues
+				<ul>
+					<li>
+						Comissão Permanente do CCISP e Presidente do Instituto Politécnico de Bragança
+					</li>
+				</ul>
 			</li>
 			<li>
-				Carlos Oliveira - Presidente do Conselho Nacional de Ciência, Tecnologia e Inovação
+				Carlos Oliveira
+				<ul>
+					<li>Presidente do Conselho Nacional de Ciência, Tecnologia e Inovação</li>
+				</ul>
 			</li>
 			<li>
-				Jorge Portugal - Diretor-Geral da COTEC Portugal
+				Jorge Portugal
+				<ul>
+					<li>Diretor-Geral da COTEC Portugal</li>
+				</ul>
 			</li>
 			<li>
-				Eugénio Campos Ferreira - Coordenador do Grupo de Trabalho de Análise do Ecossistema Nacional de Investigação e
+				Eugénio Campos Ferreira
+				<ul>
+					<li>
+						Coordenador do Grupo de Trabalho de Análise do Ecossistema Nacional de Investigação e
 						Inovação
+					</li>
+				</ul>
 			</li>
 		</ul>
 
 		<p><strong>13h15</strong> – Almoço volante</p>
 
-		<p><strong>14h30</strong> – <a href="/docs/AI2_RICARDO_REIS.pdf" target="_blank" rel="noreferrer">Grandes tendências globais e desafios de Portugal e da Europa</a> - 				Ricardo Reis – Coordenador da Comissão de Acompanhamento - London School of Economics
-
-		</p>
+		<p><strong>14h30</strong> – Grandes tendências globais e desafios de Portugal e da Europa</p>
+		<ul>
+			<li>
+				Ricardo Reis – Coordenador da Comissão de Acompanhamento
+				<ul>
+					<li>London School of Economics</li>
+				</ul>
+			</li>
+		</ul>
 
 		<p>
-			<strong>15h00</strong> – <a href="/docs/AI2_ROSARIO_PARTIDARIO_ENG.pdf" target="_blank" rel="noreferrer">Apresentação da metodologia para a definição dos domínios estratégicos
-			e para a alocação orçamental da AI² </a> - 				Maria do Rosário Partidário – Coordenadora da Equipa de Projeto -  Instituto Superior Técnico
+			<strong>15h00</strong> – Apresentação da metodologia para a definição dos domínios estratégicos
+			e para a alocação orçamental da AI²
 		</p>
+		<ul>
+			<li>
+				Maria do Rosário Partidário – Coordenadora da Equipa de Projeto
+				<ul>
+					<li>Instituto Superior Técnico</li>
+				</ul>
+			</li>
+		</ul>
 
 		<p><strong>15h30</strong> – Debate aberto ao público</p>
 		<ul>
 			<li>
-				Helena Canhão - Secretária de Estado da Ciência e Inovação
+				Helena Canhão
+				<ul>
+					<li>Secretária de Estado da Ciência e Inovação</li>
+				</ul>
 			</li>
 			<li>
-				João Rui Ferreira - Secretário de Estado da Economia
+				João Rui Ferreira
+				<ul>
+					<li>Secretário de Estado da Economia</li>
+				</ul>
 			</li>
 			<li>
-				Maria do Rosário Partidário - Coordenadora da Equipa de Projeto
+				Maria do Rosário Partidário
+				<ul>
+					<li>Coordenadora da Equipa de Projeto</li>
+				</ul>
 			</li>
 			<li>
-				Madalena Alves - Presidente da Fundação para a Ciência e a Tecnologia
+				Madalena Alves
+				<ul>
+					<li>Presidente da Fundação para a Ciência e a Tecnologia</li>
+				</ul>
 			</li>
 			<li>
-				António Grilo - Presidente da Agência Nacional de Inovação
+				António Grilo
+				<ul>
+					<li>Presidente da Agência Nacional de Inovação</li>
+				</ul>
 			</li>
 		</ul>
 
 		<p><strong>17h00</strong> – Sessão de Encerramento</p>
 		<ul>
 			<li>
-				Manuel Castro Almeida - Ministro da Economia e Coesão Territorial
+				Manuel Castro Almeida
+				<ul>
+					<li>Ministro da Economia e Coesão Territorial</li>
+				</ul>
 			</li>
 		</ul>
 	</div>

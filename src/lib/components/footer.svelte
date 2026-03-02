@@ -3,13 +3,14 @@
 	import { Button } from '$lib/components/ui/button';
 	import { Separator } from '$lib/components/ui/separator';
 	import { t } from '$lib/i18n.svelte';
+	import Logo from './logo.svelte';
 </script>
 
 <footer class="border-t bg-muted/50 py-12">
 	<div class="container">
 		<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
 			<div class="flex flex-col items-start gap-4">
-				<p class="text-xl font-semibold text-foreground">AI²Participa</p>
+				<Logo class="h-24 w-auto" />
 				<p class="max-w-[24rem] text-sm text-muted-foreground">
 					{t('footer.description')}
 				</p>
@@ -36,7 +37,7 @@
 						<img
 							src={asset('/logo-pt.svg')}
 							alt={t('footer.logoAltGov')}
-							class="h-24 w-auto transition-opacity hover:opacity-80"
+							class="h-20 w-auto transition-opacity hover:opacity-80"
 						/>
 					</a>
 				</div>
