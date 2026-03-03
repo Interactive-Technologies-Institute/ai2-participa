@@ -14,9 +14,27 @@
 				No âmbito da Avaliação Estratégica da AI², está prevista a elaboração dos seguintes
 				relatórios:
 			</p>
+
+		<h2>Entregáveis</h2>
 			<ul>
 				<li>
-					Documento com a <strong>metodologia de avaliação estratégica</strong>;
+					Documento com a <strong>metodologia de avaliação estratégica</strong> (<a
+					href={asset('/docs/RelatMetod_PT.pdf')}
+					target="_blank"
+					rel="noreferrer">link</a>);
+				</li>
+
+			</ul>
+
+		<h2>Outros Documentos</h2>
+
+			<ul>
+				<li>
+				<strong>Relatório do Grupo de Trabalho de Análise do Ecossistema Nacional de Investigação e Inovação</strong>, criado nos termos do Despacho n.º 1994/2026, de 17 de fevereiro
+				(<a
+					href={asset('/docs/RelatGrupoTrab_PT.pdf')}
+					target="_blank"
+					rel="noreferrer">link</a>);
 				</li>
 				<li>
 					<strong>Relatório de fatores críticos para a decisão (FCD)</strong>, incluindo o quadro de
@@ -47,11 +65,30 @@
 				</li>
 			</ul>
 		{:else}
-			<p>As part of the AI² Strategic Assessment, the following reports are planned:</p>
+			<p>As part of the AI² Strategic Assessment, the following deliverables and reports are planned:</p>
+
+			<h2>Deliverables</h2>
 			<ul>
 				<li>
-					Document with the <strong>strategic assessment methodology</strong>;
+					Document with the <strong>strategic assessment methodology</strong> (<a
+					href={asset('/docs/RelatMetod_PT.pdf')}
+					target="_blank"
+					rel="noreferrer">link in Portuguese</a>);
 				</li>
+
+			</ul>
+
+			<h2>Other Documents</h2>
+
+			<ul>
+				<li>
+				<strong>Report of the Working Group on National R&D Ecosystem</strong>, created under Despacho n.º 1994/2026, de 17 of February
+				(<a
+					href={asset('/docs/RelatGrupoTrab_PT.pdf')}
+					target="_blank"
+					rel="noreferrer">link in Portuguese</a>);
+				</li>
+
 				<li>
 					<strong>Report on critical decision factors (CDF)</strong>, including the strategic
 					reference framework, the strategic assessment framework and the proposed scope of the
@@ -82,23 +119,4 @@
 			</ul>
 		{/if}
 	</div>
-	<section class="typography mt-10 flex flex-col gap-4">
-		{#if getLang() === 'pt'}
-			<h2 class="">Relatórios disponíveis</h2>
-		{:else}
-			<h2 class="">Available reports</h2>
-		{/if}
-		<div class="not-typography flex max-w-lg flex-col gap-4">
-			<Item.Root variant="outline">
-				<Item.Content>
-					<Item.Title>Metodologia de Avaliação Estratégica</Item.Title>
-				</Item.Content>
-				<Item.Actions>
-					<Button href={asset('/docs/RelatMetod_PT.pdf')} target="_blank" rel="noopener noreferrer">
-						Consultar
-					</Button>
-				</Item.Actions>
-			</Item.Root>
-		</div>
-	</section>
 </div>
