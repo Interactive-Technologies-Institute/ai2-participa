@@ -1,13 +1,12 @@
 <script lang="ts">
-	import PageHeader from '$lib/components/page-header.svelte';
 	import { asset } from '$app/paths';
+	import PageHeader from '$lib/components/page-header.svelte';
+	import { Avatar, AvatarFallback, AvatarImage } from '$lib/components/ui/avatar';
 	import { getLang, t } from '$lib/i18n.svelte';
 
 	type Person = {
 		name: string;
-		org?: 'FCT' | 'ANI';
-		role?: 'coordinator' | 'coordinatorf';
-		photo?: string;
+		image: string;
 	};
 
 	type Section = {
@@ -19,68 +18,67 @@
 		{
 			titleKey: 'expertTeam.s1',
 			people: [
-				{ name: 'Ana Quartin', org: 'FCT', photo: '/photos/AnaQuartin-FCT.jpg' },
-				{ name: 'Artur Santoalha', org: 'ANI', role: 'coordinator', photo: '/photos/ArturSantoalha-ANI.jpg' },
-				{ name: 'Dina Carrilho', org: 'FCT', photo: '/photos/DianaCarrilho-FCT.jpg' },
-				{ name: 'Margarida Prado', org: 'FCT', photo: '/photos/MPrado.jpg' },
-				{ name: 'Marta Norton', org: 'FCT', role: 'coordinatorf', photo: '/photos/MartaNorton.jpg' }
+				{ name: 'Ana Quartin (FCT)', image: '/images/ana-quartin.jpg' },
+				{ name: 'Artur Santoalha (ANI) - coordenador', image: '/images/artur-santoalha.jpg' },
+				{ name: 'Dina Carrilho (FCT)', image: '/images/diana-carrilho.jpg' },
+				{ name: 'Margarida Prado (FCT)', image: '/images/margarida-prado.jpg' },
+				{ name: 'Marta Norton (FCT) - coordenadora', image: '/images/marta-norton.jpg' }
 			]
 		},
 		{
 			titleKey: 'expertTeam.s2',
 			people: [
-				{ name: 'António Bob Santos', org: 'FCT', photo: '/photos/AntonioBobSantos-FCT.jpg' },
-				{ name: 'Bruno Béu', org: 'FCT', role: 'coordinator', photo: '/photos/BrunoBeu-RECT.jpg' },
-				{ name: 'Cristiana Leandro', org: 'ANI', role: 'coordinatorf', photo: '/photos/CristianaLeadro-ANI.jpg' },
-				{ name: 'Rui Munhá', org: 'FCT', photo: '/photos/RuiMunha.jpg' }
+				{ name: 'António Bob Santos (FCT)', image: '/images/antonio-bob-santos.jpg' },
+				{ name: 'Bruno Béu (FCT) - coordenador', image: '/images/bruno-beu.jpg' },
+				{
+					name: 'Cristiana Leandro (ANI) - coordenadora',
+					image: '/images/cristiana-leandro.jpg'
+				},
+				{ name: 'Rui Munhá (FCT)', image: '/images/rui-munha.jpg' }
 			]
 		},
 		{
 			titleKey: 'expertTeam.s3',
 			people: [
-				{ name: 'Bruno Béu', org: 'FCT', role: 'coordinator', photo: '/photos/BrunoBeu-RECT.jpg' },
-				{ name: 'João Ribau', org: 'ANI', role: 'coordinator', photo: '/photos/JoaoRicau.jpg' },
-				{ name: 'Luís Ascenção', org: 'FCT', photo: '/photos/LuisAscencao-FCT.jpg' },
-				{ name: 'Nanete Sousa', org: 'FCT', photo: '/photos/NaneteSousa.jpg' },
-				{ name: 'Pedro Leite', org: 'FCT', role: 'coordinator', photo: '/photos/PedroLeite-FCT.jpg' },
-				{ name: 'Rui Munhá', org: 'FCT', photo: '/photos/RuiMunha.jpg' },
-				{ name: 'Susana Dias', org: 'FCT', photo: '/photos/SusanaDias-FCT.jpg' }
+				{ name: 'Bruno Béu (FCT) - coordenador', image: '/images/bruno-beu.jpg' },
+				{ name: 'João Ribau (ANI) - coordenador', image: '/images/joao-ricau.jpg' },
+				{ name: 'Luís Ascenção (FCT)', image: '/images/luis-ascencao.jpg' },
+				{ name: 'Nanete Sousa (FCT)', image: '/images/nanete-sousa.jpg' },
+				{ name: 'Pedro Leite (FCT) - coordenador', image: '/images/pedro-leite.jpg' },
+				{ name: 'Rui Munhá (FCT)', image: '/images/rui-munha.jpg' },
+				{ name: 'Susana Dias (FCT)', image: '/images/susana-dias.jpg' }
 			]
 		},
 		{
 			titleKey: 'expertTeam.s4',
 			people: [
-				{ name: 'João Ferreira', org: 'ANI', role: 'coordinator', photo: '/photos/JoaoLoboFerreira-ANI.jpg' },
-				{ name: 'António Bob Santos', org: 'FCT', role: 'coordinator', photo: '/photos/AntonioBobSantos-FCT.jpg' },
-				{ name: 'Bruno Béu', org: 'FCT', photo: '/photos/BrunoBeu-RECT.jpg' }
+				{ name: 'João Ferreira (ANI) - coordenador', image: '/images/joao-lobo-ferreira.jpg' },
+				{
+					name: 'António Bob Santos (FCT) - coordenador',
+					image: '/images/antonio-bob-santos.jpg'
+				},
+				{ name: 'Bruno Béu (FCT)', image: '/images/bruno-beu.jpg' }
 			]
 		},
 		{
 			titleKey: 'expertTeam.s5',
 			people: [
-				{ name: 'Sofia Azevedo', org: 'ANI', role: 'coordinatorf', photo: '/photos/SofiaAzevedo-ANI.jpg' },
-				{ name: 'Bruno Béu', org: 'FCT', role: 'coordinator', photo: '/photos/BrunoBeu-RECT.jpg' },
-				{ name: 'Madalena Alves', org: 'FCT', photo: '/photos/MadalenaAlves-FCT.jpg' }
+				{ name: 'Sofia Azevedo (ANI) - coordenadora', image: '/images/sofia-azevedo.jpg' },
+				{ name: 'Bruno Béu (FCT) - coordenador', image: '/images/bruno-beu.jpg' },
+				{ name: 'Madalena Alves (FCT)', image: '/images/madalena-alves.jpg' }
 			]
 		},
 		{
 			titleKey: 'expertTeam.s6',
 			people: [
-				{ name: 'Marisa Borges', org: 'ANI', role: 'coordinatorf', photo: '/photos/MarisaBorges.jpg' },
-				{ name: 'Daniel Carapau', org: 'FCT', role: 'coordinator', photo: '/photos/DanielCarapau-FCT.jpg' },
-				{ name: 'João Nuno Ferreira', org: 'FCT', photo: '/photos/JoaoNunoFerreira.jpg' },
-				{ name: 'Marta Abrantes', org: 'FCT', photo: '/photos/MAbrantes-FCT.jpg' },
-				{ name: 'Sílvia Figueiras', org: 'FCT', photo: '/photos/SilviaFigueiras-FCT.jpg' }
+				{ name: 'Marisa Borges (ANI) - coordenadora', image: '/images/marisa-borges.jpg' },
+				{ name: 'Daniel Carapau (FCT) - coordenador', image: '/images/daniel-carapau.jpg' },
+				{ name: 'João Nuno Ferreira (FCT)', image: '/images/joao-nuno-ferreira.jpg' },
+				{ name: 'Marta Abrantes (FCT)', image: '/images/marta-abrantes.jpg' },
+				{ name: 'Sílvia Figueiras (FCT)', image: '/images/silvia-figueiras.jpg' }
 			]
 		}
 	];
-
-	function label(person: Person): string {
-		let s = person.name;
-		if (person.org) s += ` (${person.org})`;
-		if (person.role) s += ` - ${t(`page.expertTeam.role.${person.role}`)}`;
-		return s;
-	}
 </script>
 
 <PageHeader title={t('page.expertTeam.title')} />
@@ -88,49 +86,48 @@
 	<div class="typography">
 		{#if getLang() === 'pt'}
 			<p>
-				A Avaliação Estratégica da AI² é apoiada por uma equipa de peritos provenientes da FCT e da ANI
-				que irão contribuir para realizar diagnósticos estratégicos, análises de tendências e avaliação
-				de opções estratégicas, bem como facilitação de mesas temáticas.
+				A Avaliação Estratégica da AI² é apoiada por uma equipa de peritos provenientes da FCT e da
+				ANI que irão contribuir para realizar diagnósticos estratégicos, análises de tendências e
+				avaliação de opções estratégicas, bem como facilitação de mesas temáticas.
 			</p>
 			<p>
-				Coordenados pela Professora Maria do Rosário Partidário, os peritos estão organizados por
+				coordenados pela Professora Maria do Rosário Partidário, os peritos estão organizados por
 				temas-chave da Avaliação Estratégica:
 			</p>
 		{:else}
 			<p>
-				The AI² Strategic Assessment is supported by a team of experts from the National Innovation Agency, S. A. (ANI) and the Foundation for Science and Technology, I. P. (FCT) who will
+				The AI² Strategic Assessment is supported by a team of experts from the National Innovation
+				Agency, S. A. (ANI) and the Foundation for Science and Technology, I. P. (FCT) who will
 				contribute to strategic diagnoses, trend analyses and assessment of strategic options, as
 				well as facilitation of thematic roundtables.
 			</p>
 			<p>
-				Coordinated by Professor Maria do Rosário Partidário, the experts are organised by key themes
-				of the Strategic Assessment:
+				coordinated by Professor Maria do Rosário Partidário, the experts are organised by key
+				themes of the Strategic Assessment:
 			</p>
 		{/if}
-	</div>
-
-	<div class="mt-10 space-y-10">
 		{#each sections as section}
-			<section class="space-y-4">
-				<h2 class="typography">{t(section.titleKey)}</h2>
+			<section class="mt-12">
+				<h2>{t(section.titleKey)}</h2>
 				<ul class="grid gap-4 sm:grid-cols-2">
-					{#each section.people as person (section.titleKey + '|' + person.name + '|' + (person.role ?? ''))}
-						<li class="flex items-center gap-4">
-							{#if person.photo}
-								<img
-									src={asset(person.photo)}
+					{#each section.people as person (section.titleKey + '|' + person.name + '|' + person.image)}
+						<li class="not-typography flex items-center gap-4">
+							<Avatar class="size-14">
+								<AvatarImage
+									src={asset(person.image)}
 									alt={`${t('page.expertTeam.photoAlt')} ${person.name}`}
-									class="h-14 w-14 shrink-0 rounded-full object-cover shadow-sm border border-slate-200 bg-slate-50"
-									loading="lazy"
 								/>
-							{:else}
-								<div class="h-14 w-14 shrink-0 rounded-full border border-slate-200 bg-slate-50"></div>
-							{/if}
-							<span>{label(person)}</span>
+								<AvatarFallback>
+									{person.name.slice(0, 1).toUpperCase()}
+								</AvatarFallback>
+							</Avatar>
+							<span>{person.name}</span>
 						</li>
 					{/each}
 				</ul>
 			</section>
 		{/each}
 	</div>
+
+	<div class="typography mt-10 space-y-10"></div>
 </div>

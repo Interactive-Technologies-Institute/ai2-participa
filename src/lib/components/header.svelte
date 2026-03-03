@@ -10,7 +10,6 @@
 	<div class="container flex h-16 items-center gap-4">
 		<Logo class="mr-auto h-10 w-auto" />
 		<MainNav class="hidden lg:flex" />
-		<MobileNav class="flex lg:hidden" />
 		<button
 			onclick={toggleLang}
 			title={t('lang.switchTo')}
@@ -24,5 +23,6 @@
 		<Button href="https://ai2participa.eu.consider.it/" target="_blank" rel="noopener noreferrer">
 			{t('header.participate')}
 		</Button>
+		<MobileNav class="flex lg:hidden" />
 	</div>
 </header>

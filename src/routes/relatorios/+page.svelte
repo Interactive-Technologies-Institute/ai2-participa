@@ -1,5 +1,8 @@
 <script lang="ts">
+	import { asset } from '$app/paths';
 	import PageHeader from '$lib/components/page-header.svelte';
+	import { Button } from '$lib/components/ui/button';
+	import * as Item from '$lib/components/ui/item';
 	import { getLang, t } from '$lib/i18n.svelte';
 </script>
 
@@ -13,12 +16,7 @@
 			</p>
 			<ul>
 				<li>
-					Documento com a <strong>metodologia de avaliação estratégica</strong> (<a
-						href="/docs/RelatMetod_PT.pdf"
-						target="_blank"
-						rel="noreferrer"
-						>link</a
-					>);
+					Documento com a <strong>metodologia de avaliação estratégica</strong>;
 				</li>
 				<li>
 					<strong>Relatório de fatores críticos para a decisão (FCD)</strong>, incluindo o quadro de
@@ -26,11 +24,13 @@
 					diálogos;
 				</li>
 				<li>
-					<strong>Opções estratégicas</strong> para a definição da alocação orçamental plurianual e de domínios
-					estratégicos;
+					<strong>Opções estratégicas</strong> para a definição da alocação orçamental plurianual e de
+					domínios estratégicos;
 				</li>
 				<li>
-					<strong>Resultados da avaliação estratégica das oportunidades e riscos, e recomendações</strong>;
+					<strong
+						>Resultados da avaliação estratégica das oportunidades e riscos, e recomendações</strong
+					>;
 				</li>
 				<li><strong>Proposta de plano de monitorização e avaliação ex-post</strong>;</li>
 				<li>
@@ -38,37 +38,33 @@
 					estratégicos e da UPI da AI², definição dos domínios estratégicos e respetiva justificação;
 				</li>
 				<li>
-					<strong>Relatório final</strong>, integrando os contributos do CNCTI, do Conselho Científico
-					e do Conselho de Administração da AI²;
+					<strong>Relatório final</strong>, integrando os contributos do CNCTI, do Conselho
+					Científico e do Conselho de Administração da AI²;
 				</li>
 				<li>
-					<strong>Relatório de consulta pública</strong> com a análise qualitativa e quantitativa dos contributos
-					recebidos nos diálogos públicos, com apoio de ferramentas de IA, se aplicável.
+					<strong>Relatório de consulta pública</strong> com a análise qualitativa e quantitativa dos
+					contributos recebidos nos diálogos públicos, com apoio de ferramentas de IA, se aplicável.
 				</li>
 			</ul>
 		{:else}
-			<p>
-				As part of the AI² Strategic Assessment, the following reports are planned:
-			</p>
+			<p>As part of the AI² Strategic Assessment, the following reports are planned:</p>
 			<ul>
 				<li>
-					Document with the <strong>strategic assessment methodology</strong> (<a
-						href="/docs/RelatMetod_PT.pdf"
-						target="_blank"
-						rel="noreferrer"
-						>link</a
-					>);
+					Document with the <strong>strategic assessment methodology</strong>;
 				</li>
 				<li>
-					<strong>Report on critical decision factors (CDF)</strong>, including the strategic reference
-					framework, the strategic assessment framework and the proposed scope of the dialogues;
+					<strong>Report on critical decision factors (CDF)</strong>, including the strategic
+					reference framework, the strategic assessment framework and the proposed scope of the
+					dialogues;
 				</li>
 				<li>
 					<strong>Strategic options</strong> for defining the multi-annual budget allocation and strategic
 					domains;
 				</li>
 				<li>
-					<strong>Results of the strategic assessment of opportunities and risks, and recommendations</strong>;
+					<strong
+						>Results of the strategic assessment of opportunities and risks, and recommendations</strong
+					>;
 				</li>
 				<li><strong>Proposed monitoring and ex-post evaluation plan</strong>;</li>
 				<li>
@@ -76,8 +72,8 @@
 					domains and UPI, definition of strategic domains and respective justification;
 				</li>
 				<li>
-					<strong>Final report</strong>, integrating contributions from the CNCTI, the Scientific Council
-					and the AI² Board of Directors;
+					<strong>Final report</strong>, integrating contributions from the CNCTI, the Scientific
+					Council and the AI² Board of Directors;
 				</li>
 				<li>
 					<strong>Public consultation report</strong> with qualitative and quantitative analysis of contributions
@@ -86,4 +82,23 @@
 			</ul>
 		{/if}
 	</div>
+	<section class="typography mt-10 flex flex-col gap-4">
+		{#if getLang() === 'pt'}
+			<h2 class="">Relatórios disponíveis</h2>
+		{:else}
+			<h2 class="">Available reports</h2>
+		{/if}
+		<div class="not-typography flex max-w-lg flex-col gap-4">
+			<Item.Root variant="outline">
+				<Item.Content>
+					<Item.Title>Metodologia de Avaliação Estratégica</Item.Title>
+				</Item.Content>
+				<Item.Actions>
+					<Button href={asset('/docs/RelatMetod_PT.pdf')} target="_blank" rel="noopener noreferrer">
+						Consultar
+					</Button>
+				</Item.Actions>
+			</Item.Root>
+		</div>
+	</section>
 </div>

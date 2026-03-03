@@ -3,14 +3,14 @@
 	import { getLang, t } from '$lib/i18n.svelte';
 </script>
 
-<PageHeader title={t('page.decentralizedConferences.title')} />
+<PageHeader title={t('page.decentralizedWorkshops.title')} />
 <div class="container my-12 md:my-24">
 	<div class="typography">
 		{#if getLang() === 'pt'}
 			<p>
-				A metodologia prevê a realização de conferências e workshops descentralizados, abertos a todos
-				os interessados mediante inscrição. Estas sessões têm como objetivo apresentar o processo,
-				esclarecer dúvidas e recolher contributos em tempo real.
+				A metodologia prevê a realização de conferências e workshops descentralizados, abertos a
+				todos os interessados mediante inscrição. Estas sessões têm como objetivo apresentar o
+				processo, esclarecer dúvidas e recolher contributos em tempo real.
 			</p>
 			<p>
 				Está previsto um workshop em cada região NUTS II do continente, em articulação com as CCDR,
@@ -27,14 +27,15 @@
 				</li>
 				<li>
 					Cinco workshops em junho-julho de 2026 para definir e discutir opções estratégicas e
-					respetiva avaliação de oportunidades e riscos (Ponta Delgada, Aveiro, Covilhã, Braga, Faro).
+					respetiva avaliação de oportunidades e riscos (Ponta Delgada, Aveiro, Covilhã, Braga,
+					Faro).
 				</li>
 				<li>Apresentação preliminar de resultados (em outubro de 2026).</li>
 				<li>Conferência final (em novembro/dezembro de 2026).</li>
 			</ul>
 			<p>
-				Em breve será disponibilizada informação com as datas e local dos workshops, temas e lista de
-				participantes.
+				Em breve será disponibilizada informação com as datas e local dos workshops, temas e lista
+				de participantes.
 			</p>
 		{:else}
 			<p>
@@ -52,8 +53,8 @@
 			</p>
 			<ul>
 				<li>
-					Five workshops in May 2026 to address strategic focus (Funchal, Évora, Coimbra,
-					Bragança, Porto).
+					Five workshops in May 2026 to address strategic focus (Funchal, Évora, Coimbra, Bragança,
+					Porto).
 				</li>
 				<li>
 					Five workshops in June–July 2026 to define and discuss strategic options and assessment of

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { asset } from '$app/paths';
 	import PageHeader from '$lib/components/page-header.svelte';
 	import { Button } from '$lib/components/ui/button';
 	import { getLang, t } from '$lib/i18n.svelte';
@@ -38,12 +39,12 @@
 			<h2>{t('page.strategicAssessment.anchors')}</h2>
 			<ul>
 				<li>
-					<strong>Objetivo:</strong> valorizar a investigação fundamental e aplicada, reforçar ligação entre
-					conhecimento, inovação e valor económico, social, cultural e ambiental.
+					<strong>Objetivo:</strong> valorizar a investigação fundamental e aplicada, reforçar ligação
+					entre conhecimento, inovação e valor económico, social, cultural e ambiental.
 				</li>
 				<li>
-					<strong>Visão 2050:</strong> Portugal como país que gera talento e conhecimento, com sistema científico
-					e de inovação dinâmico, interligado, competitivo e sustentável.
+					<strong>Visão 2050:</strong> Portugal como país que gera talento e conhecimento, com sistema
+					científico e de inovação dinâmico, interligado, competitivo e sustentável.
 				</li>
 				<li>
 					<strong>Princípios:</strong> excelência, mérito e impacto; alinhamento nacional e internacional;
@@ -61,13 +62,13 @@
 					de Avaliação Estratégica com FCD, critérios e indicadores, e identificação de seis temas-chave.
 				</li>
 				<li>
-					<strong>Identificação de opções estratégicas:</strong> definição participada de alternativas para
-					alocação orçamental e domínios estratégicos, integrando contributos de mesas temáticas e discussões
-					técnicas.
+					<strong>Identificação de opções estratégicas:</strong> definição participada de alternativas
+					para alocação orçamental e domínios estratégicos, integrando contributos de mesas temáticas
+					e discussões técnicas.
 				</li>
 				<li>
-					<strong>Avaliação de oportunidades e riscos:</strong> análise de tendências, macropolíticas, evolução
-					dos FCD, evidências de impacto e benchmarking internacional.
+					<strong>Avaliação de oportunidades e riscos:</strong> análise de tendências, macropolíticas,
+					evolução dos FCD, evidências de impacto e benchmarking internacional.
 				</li>
 				<li>
 					<strong>Plano de monitorização e avaliação ex-post:</strong> sistema de indicadores de desempenho,
@@ -91,13 +92,11 @@
 					Budget allocation to R&amp;D areas, strategic domains and the Innovation Promotion Unit
 					(UPI);
 				</li>
-				<li>
-					Definition of AI²'s strategic domains, which may include specific sub-domains.
-				</li>
+				<li>Definition of AI²'s strategic domains, which may include specific sub-domains.</li>
 			</ul>
 			<p>
-				The process identifies strategic options, evaluates opportunities and risks, and supports the
-				preparation of AI²'s multi-annual programme contract, addressing four central questions:
+				The process identifies strategic options, evaluates opportunities and risks, and supports
+				the preparation of AI²'s multi-annual programme contract, addressing four central questions:
 			</p>
 			<ul>
 				<li>Percentage of budget to allocate to R&amp;D areas, strategic domains and UPI.</li>
@@ -116,48 +115,56 @@
 					knowledge, innovation and economic, social, cultural and environmental value.
 				</li>
 				<li>
-					<strong>Vision 2050:</strong> Portugal as a country that generates talent and knowledge, with a dynamic,
-					interconnected, competitive and sustainable scientific and innovation system.
+					<strong>Vision 2050:</strong> Portugal as a country that generates talent and knowledge, with
+					a dynamic, interconnected, competitive and sustainable scientific and innovation system.
 				</li>
 				<li>
 					<strong>Principles:</strong> excellence, merit and impact; national and international alignment;
 					transparency and participation; coherence and efficiency; accountability and continuous evaluation.
 				</li>
 				<li>
-					<strong>Pillars:</strong> stable multi-annual budget; basic research; top-down priorities;
-					research-innovation relationship; infrastructures; scientific employment and qualification.
+					<strong>Pillars:</strong> stable multi-annual budget; basic research; top-down priorities; research-innovation
+					relationship; infrastructures; scientific employment and qualification.
 				</li>
 			</ul>
 			<h2>{t('page.strategicAssessment.phases')}</h2>
 			<ol>
 				<li>
-					<strong>Strategic focus:</strong> participatory definition of priorities, development of the Strategic
-					Assessment Framework with CDFs, criteria and indicators, and identification of six key themes.
+					<strong>Strategic focus:</strong> participatory definition of priorities, development of the
+					Strategic Assessment Framework with CDFs, criteria and indicators, and identification of six
+					key themes.
 				</li>
 				<li>
-					<strong>Identification of strategic options:</strong> participatory definition of alternatives for
-					budget allocation and strategic domains, integrating contributions from thematic roundtables and technical
-					discussions.
+					<strong>Identification of strategic options:</strong> participatory definition of alternatives
+					for budget allocation and strategic domains, integrating contributions from thematic roundtables
+					and technical discussions.
 				</li>
 				<li>
-					<strong>Assessment of opportunities and risks:</strong> analysis of trends, macro-policies, evolution
-					of CDFs, impact evidence and international benchmarking.
+					<strong>Assessment of opportunities and risks:</strong> analysis of trends, macro-policies,
+					evolution of CDFs, impact evidence and international benchmarking.
 				</li>
 				<li>
-					<strong>Monitoring and ex-post evaluation plan:</strong> system of performance, results and impact
-					indicators, reporting frequency and monitoring mechanisms.
+					<strong>Monitoring and ex-post evaluation plan:</strong> system of performance, results and
+					impact indicators, reporting frequency and monitoring mechanisms.
 				</li>
 			</ol>
 			<h2>{t('page.strategicAssessment.participation')}</h2>
 			<p>Participation by relevant stakeholders is continuous, combining:</p>
 			<ul>
 				<li>Online public consultation and contributions at thematic roundtables.</li>
-				<li>Interaction with experts and stakeholders across the National Science, Technology and Innovation System and civil society.</li>
-				<li>Decentralized sessions across the regions, including open conferences and workshops.</li>
+				<li>
+					Interaction with experts and stakeholders across the National Science, Technology and
+					Innovation System and civil society.
+				</li>
+				<li>
+					Decentralized sessions across the regions, including open conferences and workshops.
+				</li>
 			</ul>
 		{/if}
 		<div class="not-typography mt-10">
-			<Button variant="outline" href="#" disabled>{t('page.strategicAssessment.viewDoc')}</Button>
+			<Button variant="outline" href={asset('/docs/RelatMetod_PT.pdf')}
+				>{t('page.strategicAssessment.viewDoc')}</Button
+			>
 		</div>
 	</div>
 </div>

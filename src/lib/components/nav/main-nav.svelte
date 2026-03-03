@@ -1,9 +1,8 @@
 <script lang="ts">
-	import { asset, resolve } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import * as NavigationMenu from '$lib/components/ui/navigation-menu';
-	import { navigationMenuTriggerStyle } from '$lib/components/ui/navigation-menu/navigation-menu-trigger.svelte';
-	import type { HTMLAttributes } from 'svelte/elements';
 	import { t } from '$lib/i18n.svelte';
+	import type { HTMLAttributes } from 'svelte/elements';
 
 	let {
 		class: className
@@ -24,9 +23,6 @@
 			<NavigationMenu.Content>
 				<ul class="grid w-[260px] gap-4 p-2">
 					<li>
-						<NavigationMenu.Link href={resolve('/apresentacao/')}>
-							{t('nav.reports.presentations')}
-						</NavigationMenu.Link>
 						<NavigationMenu.Link href={resolve('/participacao-publica/')}>
 							{t('nav.publicParticipation')}
 						</NavigationMenu.Link>
@@ -36,14 +32,17 @@
 						<NavigationMenu.Link href={resolve('/comissao-acompanhamento/')}>
 							{t('nav.advisoryCommittee')}
 						</NavigationMenu.Link>
+						<NavigationMenu.Link href={resolve('/apresentacao-publica/')}>
+							{t('nav.reports.presentations')}
+						</NavigationMenu.Link>
 						<NavigationMenu.Link href={resolve('/reunioes-entidades/')}>
 							{t('nav.stakeholderMeetings')}
 						</NavigationMenu.Link>
 						<NavigationMenu.Link href={resolve('/mesas-tematicas/')}>
 							{t('nav.thematicTables')}
 						</NavigationMenu.Link>
-						<NavigationMenu.Link href={resolve('/conferencias-reunioes-descentralizadas/')}>
-							{t('nav.decentralizedConferences')}
+						<NavigationMenu.Link href={resolve('/workshops-descentralizados/')}>
+							{t('nav.decentralizedWorkshops')}
 						</NavigationMenu.Link>
 						<NavigationMenu.Link href={resolve('/iniciativas-bottom-up/')}>
 							{t('nav.bottomUpInitiatives')}

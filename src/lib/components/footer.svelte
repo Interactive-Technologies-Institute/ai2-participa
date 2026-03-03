@@ -61,6 +61,11 @@
 						</a>
 					</li>
 					<li>
+						<a href={resolve('/apresentacao-publica/')} class="hover:text-foreground">
+							{t('nav.reports.presentations')}
+						</a>
+					</li>
+					<li>
 						<a href={resolve('/reunioes-entidades/')} class="hover:text-foreground">
 							{t('nav.stakeholderMeetings')}
 						</a>
@@ -71,11 +76,8 @@
 						</a>
 					</li>
 					<li>
-						<a
-							href={resolve('/conferencias-reunioes-descentralizadas/')}
-							class="hover:text-foreground"
-						>
-							{t('nav.decentralizedConferences')}
+						<a href={resolve('/workshops-descentralizados/')} class="hover:text-foreground">
+							{t('nav.decentralizedWorkshops')}
 						</a>
 					</li>
 					<li>

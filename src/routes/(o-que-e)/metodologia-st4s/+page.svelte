@@ -1,5 +1,7 @@
 <script lang="ts">
+	import { asset } from '$app/paths';
 	import PageHeader from '$lib/components/page-header.svelte';
+	import { Button } from '$lib/components/ui/button';
 	import { getLang, t } from '$lib/i18n.svelte';
 </script>
 
@@ -11,14 +13,14 @@
 				A Avaliação Estratégica da AI² utiliza a metodologia ST4S - Strategic Thinking for
 				Sustainability, desenvolvida pela Professora Maria do Rosário Partidário (Partidário, 2021)<sup
 					>1</sup
-				>. Esta abordagem combina pensamento sistémico, backcasting e participação pública ativa para
-				apoiar decisões estratégicas de longo prazo.
+				>. Esta abordagem combina pensamento sistémico, backcasting e participação pública ativa
+				para apoiar decisões estratégicas de longo prazo.
 			</p>
 			<p>
 				A metodologia começa por definir, de forma participada, o objetivo, a visão, os princípios e
 				pilares estratégicos para o futuro da investigação e inovação em Portugal e, a partir daí,
-				identifica caminhos estratégicos para os concretizar. Todo o processo decorre com envolvimento
-				de peritos, atores relevantes e uma Comissão de Acompanhamento independente.
+				identifica caminhos estratégicos para os concretizar. Todo o processo decorre com
+				envolvimento de peritos, atores relevantes e uma Comissão de Acompanhamento independente.
 			</p>
 			<h2>{t('page.st4s.threePhases')}</h2>
 			<ol>
@@ -45,21 +47,18 @@
 				</li>
 			</ol>
 			<p>
-				A metodologia integra uma abordagem participativa e híbrida, combinando contributos bottom-up
-				com uma decisão final top-down, garantindo rigor técnico, envolvimento plural e orientação
-				estratégica para a definição da alocação orçamental e dos domínios estratégicos da AI².
+				A metodologia integra uma abordagem participativa e híbrida, combinando contributos
+				bottom-up com uma decisão final top-down, garantindo rigor técnico, envolvimento plural e
+				orientação estratégica para a definição da alocação orçamental e dos domínios estratégicos
+				da AI².
 			</p>
-						<hr />
-						<p>
-						Documento com a <strong>metodologia de avaliação estratégica</strong> (<a
-						href="/docs/RelatMetod_PT.pdf"
-						target="_blank"
-						rel="noreferrer"
-						>link</a
-					>);
-			</p>
-
-			<p>
+			<div class="not-typography mt-10">
+				<Button variant="outline" href={asset('/docs/RelatMetod_PT.pdf')}
+					>{t('page.strategicAssessment.viewDoc')}</Button
+				>
+			</div>
+			<hr />
+			<p class="small">
 				<sup>1</sup>
 				Partidário, M. R. (2021).
 				<em>Strategic thinking for sustainability (ST4S) in strategic environmental assessment.</em>
@@ -85,15 +84,15 @@
 				<li>
 					<strong>Focus</strong>
 					<p>
-						Identifying what is a priority to assess, defining the Critical Decision Factors (CDF) and
-						the strategic assessment framework.
+						Identifying what is a priority to assess, defining the Critical Decision Factors (CDF)
+						and the strategic assessment framework.
 					</p>
 				</li>
 				<li>
 					<strong>Assessment of strategic options</strong>
 					<p>
-						Analysis of the different options based on their opportunities and risks, selecting those
-						that best contribute to the established vision and objectives.
+						Analysis of the different options based on their opportunities and risks, selecting
+						those that best contribute to the established vision and objectives.
 					</p>
 				</li>
 				<li>
@@ -109,16 +108,13 @@
 				contributions with a final top-down decision, ensuring technical rigour, plural involvement
 				and strategic orientation for defining AI²'s budget allocation and strategic domains.
 			</p>
+			<div class="not-typography mt-10">
+				<Button variant="outline" href={asset('/docs/RelatMetod_PT.pdf')}
+					>{t('page.strategicAssessment.viewDoc')}</Button
+				>
+			</div>
 			<hr />
-			<p>
-						Document with the <strong>strategic assesment methodology (in PT)</strong> (<a
-						href="/docs/RelatMetod_PT.pdf"
-						target="_blank"
-						rel="noreferrer"
-						>link</a
-					>);
-			</p>
-			<p>
+			<p class="small">
 				<sup>1</sup>
 				Partidário, M. R. (2021).
 				<em>Strategic thinking for sustainability (ST4S) in strategic environmental assessment.</em>

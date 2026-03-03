@@ -1,6 +1,7 @@
 <script lang="ts">
-	import PageHeader from '$lib/components/page-header.svelte';
 	import { asset } from '$app/paths';
+	import PageHeader from '$lib/components/page-header.svelte';
+	import { Avatar, AvatarFallback, AvatarImage } from '$lib/components/ui/avatar';
 	import { getLang, t } from '$lib/i18n.svelte';
 </script>
 
@@ -21,23 +22,24 @@
 			</p>
 		{/if}
 		<h2>{t('page.coordination.scientificCoordination')}</h2>
-		<div class="mt-4 flex flex-col gap-4 sm:flex-row sm:items-center">
-			<img
-				src={asset('/photos/MariaRosarioPartidario.jpg')}
-				alt="Professora Doutora Maria do Rosário Partidário"
-				class="h-28 w-28 shrink-0 rounded-full object-cover shadow-sm border border-slate-200 bg-slate-50"
-				loading="lazy"
-			/>
-			<p class="large">
+		<div class="mt-4 flex flex-col items-start gap-4">
+			<Avatar class="not-typography size-28">
+				<AvatarImage
+					src={asset('/images/maria-rosario-partidario.jpg')}
+					alt="Professora Doutora Maria do Rosário Partidário"
+				/>
+				<AvatarFallback>MR</AvatarFallback>
+			</Avatar>
+			<p class="large mt-0">
 				Professora Doutora Maria do Rosário Partidário<br />
 				<span class="muted">{t('page.coordination.scientificRole')}</span>
 			</p>
 		</div>
 		{#if getLang() === 'pt'}
 			<p>
-				Professora Catedrática do Instituto Superior Técnico, especialista em Avaliação Estratégica e
-				autora da metodologia ST4S - Strategic Thinking for Sustainability, que estrutura o presente
-				processo de avaliação.
+				Professora Catedrática do Instituto Superior Técnico, especialista em Avaliação Estratégica
+				e autora da metodologia ST4S - Strategic Thinking for Sustainability, que estrutura o
+				presente processo de avaliação.
 			</p>
 		{:else}
 			<p>
@@ -47,22 +49,29 @@
 			</p>
 		{/if}
 		<h2>{t('page.coordination.institutionalCoordination')}</h2>
-		<p class="large">
-			PLANAPP - Centro de Planeamento e de Avaliação de Políticas Públicas<br />
-			<span class="muted">{t('page.coordination.institutionalRole')}</span>
-		</p>
+		<div class="mt-4 flex flex-col items-start">
+			<img
+				src={asset('/logo-planapp.svg')}
+				alt="PLANAPP - Centro de Planeamento e de Avaliação de Políticas Públicas"
+				class="h-24 w-auto"
+			/>
+			<p class="large mt-0">
+				PLANAPP - Centro de Planeamento e de Avaliação de Políticas Públicas<br />
+				<span class="muted">{t('page.coordination.institutionalRole')}</span>
+			</p>
+		</div>
 		{#if getLang() === 'pt'}
 			<p>
 				O PLANAPP coordena globalmente o processo de Avaliação Estratégica, em articulação com a
-				Direção-Geral da Economia (DGE) e a Direção-Geral de Estudos, Planeamento e Avaliação (DGEPA),
-				assegurando o desenho metodológico, a organização da participação pública e a consolidação
-				técnica dos resultados.
+				Direção-Geral da Economia (DGE) e a Direção-Geral de Estudos, Planeamento e Avaliação
+				(DGEPA), assegurando o desenho metodológico, a organização da participação pública e a
+				consolidação técnica dos resultados.
 			</p>
 		{:else}
 			<p>
-				PLANAPP provides overall coordination of the Strategic Assessment process, in articulation with the
-				Directorate-General for the Economy (DGE) and the Directorate-General for Studies, Planning
-				and Evaluation (DGEPA), ensuring the methodological design, organisation of public
+				PLANAPP provides overall coordination of the Strategic Assessment process, in articulation
+				with the Directorate-General for the Economy (DGE) and the Directorate-General for Studies,
+				Planning and Evaluation (DGEPA), ensuring the methodological design, organisation of public
 				participation and technical consolidation of results.
 			</p>
 		{/if}

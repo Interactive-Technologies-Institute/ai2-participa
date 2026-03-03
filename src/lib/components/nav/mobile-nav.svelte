@@ -2,9 +2,9 @@
 	import { asset, resolve } from '$app/paths';
 	import { buttonVariants } from '$lib/components/ui/button';
 	import * as Popover from '$lib/components/ui/popover';
+	import { t } from '$lib/i18n.svelte';
 	import { cn } from '$lib/utils';
 	import type { HTMLAnchorAttributes, HTMLAttributes } from 'svelte/elements';
-	import { t } from '$lib/i18n.svelte';
 
 	type NavItemProps = HTMLAnchorAttributes & {
 		content?: string;
@@ -65,16 +65,17 @@
 				<div class="text-sm font-medium text-muted-foreground">{t('nav.reports')}</div>
 				<div class="flex flex-col gap-2">
 					{@render NavItem({ href: resolve('/relatorios/'), content: t('nav.reports') })}
-					{@render NavItem({ href: asset('/docs/RelatMetod_PT.pdf'), content: t('nav.reports.methodologicalReport') })}
+					{@render NavItem({
+						href: asset('/docs/RelatMetod_PT.pdf'),
+						content: t('nav.reports.methodologicalReport')
+					})}
 				</div>
 			</div>
 			<div class="flex flex-col gap-2">
-				<div class="text-sm font-medium text-muted-foreground">{t('nav.participationStrategy')}</div>
+				<div class="text-sm font-medium text-muted-foreground">
+					{t('nav.participationStrategy')}
+				</div>
 				<div class="flex flex-col gap-2">
-					{@render NavItem({
-						href: resolve('/apresentacao/'),
-						content: t('nav.reports.presentations')
-					})}
 					{@render NavItem({
 						href: resolve('/participacao-publica/'),
 						content: t('nav.publicParticipation')
@@ -88,13 +89,20 @@
 						content: t('nav.advisoryCommittee')
 					})}
 					{@render NavItem({
+						href: resolve('/apresentacao-publica/'),
+						content: t('nav.reports.presentations')
+					})}
+					{@render NavItem({
 						href: resolve('/reunioes-entidades/'),
 						content: t('nav.stakeholderMeetings')
 					})}
-					{@render NavItem({ href: resolve('/mesas-tematicas/'), content: t('nav.thematicTables') })}
 					{@render NavItem({
-						href: resolve('/conferencias-reunioes-descentralizadas/'),
-						content: t('nav.decentralizedConferences')
+						href: resolve('/mesas-tematicas/'),
+						content: t('nav.thematicTables')
+					})}
+					{@render NavItem({
+						href: resolve('/workshops-descentralizados/'),
+						content: t('nav.decentralizedWorkshops')
 					})}
 					{@render NavItem({
 						href: resolve('/iniciativas-bottom-up/'),
@@ -105,7 +113,10 @@
 			<div class="flex flex-col gap-2">
 				<div class="text-sm font-medium text-muted-foreground">{t('nav.whatIsIt')}</div>
 				<div class="flex flex-col gap-2">
-					{@render NavItem({ href: resolve('/metodologia-st4s/'), content: t('nav.st4sMethodology') })}
+					{@render NavItem({
+						href: resolve('/metodologia-st4s/'),
+						content: t('nav.st4sMethodology')
+					})}
 					{@render NavItem({
 						href: resolve('/metodologia-avaliacao-estrategica-ai2/'),
 						content: t('nav.strategicAssessmentMethodology')
