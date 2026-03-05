@@ -18,64 +18,43 @@
 		{
 			titleKey: 'expertTeam.s1',
 			people: [
-				{ name: 'Ana Quartin (FCT)', image: '/images/ana-quartin.jpg' },
-				{ name: 'Artur Santoalha (ANI) - coordenador', image: '/images/artur-santoalha.jpg' },
-				{ name: 'Dina Carrilho (FCT)', image: '/images/diana-carrilho.jpg' },
-				{ name: 'Margarida Prado (FCT)', image: '/images/margarida-prado.jpg' },
-				{ name: 'Marta Norton (FCT) - coordenadora', image: '/images/marta-norton.jpg' }
+				{ name: 'Artur Santoalha (ANI) ', image: '/images/artur-santoalha.jpg' },
+				{ name: 'Marta Norton (FCT) ', image: '/images/marta-norton.jpg' }
 			]
 		},
 		{
 			titleKey: 'expertTeam.s2',
 			people: [
-				{ name: 'António Bob Santos (FCT)', image: '/images/antonio-bob-santos.jpg' },
-				{ name: 'Bruno Béu (FCT) - coordenador', image: '/images/bruno-beu.jpg' },
-				{
-					name: 'Cristiana Leandro (ANI) - coordenadora',
-					image: '/images/cristiana-leandro.jpg'
-				},
-				{ name: 'Rui Munhá (FCT)', image: '/images/rui-munha.jpg' }
+				{ name: 'Bruno Béu (FCT) ', image: '/images/bruno-beu.jpg' },
+				{ name: 'Cristiana Leandro (ANI) ', image: '/images/cristiana-leandro.jpg' }
 			]
 		},
 		{
 			titleKey: 'expertTeam.s3',
 			people: [
-				{ name: 'Bruno Béu (FCT) - coordenador', image: '/images/bruno-beu.jpg' },
-				{ name: 'João Ribau (ANI) - coordenador', image: '/images/joao-ricau.jpg' },
-				{ name: 'Luís Ascenção (FCT)', image: '/images/luis-ascencao.jpg' },
-				{ name: 'Nanete Sousa (FCT)', image: '/images/nanete-sousa.jpg' },
-				{ name: 'Pedro Leite (FCT) - coordenador', image: '/images/pedro-leite.jpg' },
-				{ name: 'Rui Munhá (FCT)', image: '/images/rui-munha.jpg' },
-				{ name: 'Susana Dias (FCT)', image: '/images/susana-dias.jpg' }
+				{ name: 'João Ribau (ANI)', image: '/images/joao-ricau.jpg' },
+				{ name: 'Pedro Leite (FCT)', image: '/images/pedro-leite.jpg' }
 			]
 		},
 		{
 			titleKey: 'expertTeam.s4',
 			people: [
-				{ name: 'João Ferreira (ANI) - coordenador', image: '/images/joao-lobo-ferreira.jpg' },
-				{
-					name: 'António Bob Santos (FCT) - coordenador',
-					image: '/images/antonio-bob-santos.jpg'
-				},
-				{ name: 'Bruno Béu (FCT)', image: '/images/bruno-beu.jpg' }
+				{ name: 'João Ferreira (ANI)', image: '/images/joao-lobo-ferreira.jpg' },
+				{ name: 'Rui Munhá (FCT)', image: '/images/rui-munha.jpg' }
 			]
 		},
 		{
 			titleKey: 'expertTeam.s5',
 			people: [
-				{ name: 'Sofia Azevedo (ANI) - coordenadora', image: '/images/sofia-azevedo.jpg' },
-				{ name: 'Bruno Béu (FCT) - coordenador', image: '/images/bruno-beu.jpg' },
-				{ name: 'Madalena Alves (FCT)', image: '/images/madalena-alves.jpg' }
+				{ name: 'Sofia Azevedo (ANI) ', image: '/images/sofia-azevedo.jpg' },
+				{ name: 'Bruno Béu (FCT) ', image: '/images/bruno-beu.jpg' }
 			]
 		},
 		{
 			titleKey: 'expertTeam.s6',
 			people: [
-				{ name: 'Marisa Borges (ANI) - coordenadora', image: '/images/marisa-borges.jpg' },
-				{ name: 'Daniel Carapau (FCT) - coordenador', image: '/images/daniel-carapau.jpg' },
-				{ name: 'João Nuno Ferreira (FCT)', image: '/images/joao-nuno-ferreira.jpg' },
-				{ name: 'Marta Abrantes (FCT)', image: '/images/marta-abrantes.jpg' },
-				{ name: 'Sílvia Figueiras (FCT)', image: '/images/silvia-figueiras.jpg' }
+				{ name: 'Marisa Borges (ANI) ', image: '/images/marisa-borges.jpg' },
+				{ name: 'Daniel Carapau (FCT) ', image: '/images/daniel-carapau.jpg' }
 			]
 		}
 	];
@@ -86,24 +65,20 @@
 	<div class="typography">
 		{#if getLang() === 'pt'}
 			<p>
-				A Avaliação Estratégica da AI² é apoiada por uma equipa de peritos provenientes da FCT e da
-				ANI que irão contribuir para realizar diagnósticos estratégicos, análises de tendências e
-				avaliação de opções estratégicas, bem como facilitação de mesas temáticas.
+				A Avaliação Estratégica da AI² é apoiada por uma equipa de peritos provenientes da FCT e da ANI, coordenados pela Professora Maria do Rosário Partidário. Irão contribuir para realizar diagnósticos estratégicos, análises de tendências e avaliação de opções estratégicas, bem como facilitação de mesas temáticas.
 			</p>
 			<p>
-				coordenados pela Professora Maria do Rosário Partidário, os peritos estão organizados por
-				temas-chave da Avaliação Estratégica:
+				Os peritos estão organizados por temas-chave da Avaliação Estratégica, com os seguintes coordenadores:
 			</p>
 		{:else}
 			<p>
 				The AI² Strategic Assessment is supported by a team of experts from the National Innovation
-				Agency, S. A. (ANI) and the Foundation for Science and Technology, I. P. (FCT) who will
+				Agency, S. A. (ANI) and the Foundation for Science and Technology, I. P. (FCT), coordinated by Professor Maria do Rosário Partidário. They will
 				contribute to strategic diagnoses, trend analyses and assessment of strategic options, as
 				well as facilitation of thematic roundtables.
 			</p>
 			<p>
-				coordinated by Professor Maria do Rosário Partidário, the experts are organised by key
-				themes of the Strategic Assessment:
+				Tthe experts are organised by key themes of the Strategic Assessment:
 			</p>
 		{/if}
 		{#each sections as section}
