@@ -65,15 +65,19 @@
 	<div class="typography">
 		{#if getLang() === 'pt'}
 			<p>
-				A Avaliação Estratégica da AI² é apoiada por uma equipa de peritos provenientes da FCT e da ANI, coordenados pela Professora Maria do Rosário Partidário. Irão contribuir para realizar diagnósticos estratégicos, análises de tendências e avaliação de opções estratégicas, bem como facilitação de mesas temáticas.
+				A Avaliação Estratégica da AI² é apoiada por uma equipa de peritos da FCT e da ANI,
+				 coordenada pela Professora Maria do Rosário Partidário.
+				  Esta equipa irá contribuir para a realização de diagnósticos estratégicos,
+				   análises de tendências, avaliação de opções estratégicas, bem como para a facilitação de mesas temáticas.
 			</p>
 			<p>
-				Os peritos estão organizados por temas-chave da Avaliação Estratégica, com os seguintes coordenadores:
+				    Os peritos estão organizados por temas-chave da Avaliação Estratégica, com os seguintes coordenadores:
 			</p>
 		{:else}
 			<p>
 				The AI² Strategic Assessment is supported by a team of experts from the National Innovation
-				Agency, S. A. (ANI) and the Foundation for Science and Technology, I. P. (FCT), coordinated by Professor Maria do Rosário Partidário. They will
+				Agency, S. A. (ANI) and the Foundation for Science and Technology, I. P. (FCT),
+				 coordinated by Professor Maria do Rosário Partidário. They will
 				contribute to strategic diagnoses, trend analyses and assessment of strategic options, as
 				well as facilitation of thematic roundtables.
 			</p>
