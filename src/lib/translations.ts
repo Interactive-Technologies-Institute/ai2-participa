@@ -30,13 +30,13 @@ export const translations: Record<Lang, Record<string, string>> = {
 		'nav.aboutTeam': 'Sobre a Equipa',
 		'nav.coordination': 'Coordenação',
 		'nav.expertTeam': 'Equipa de Peritos',
-		'nav.reports.presentations': 'Apresentação Pública',
+		'nav.reports.presentations': 'Conferências',
 		'nav.reports.methodologicalReport': 'Relatório Metodologia',
 		'nav.toggleMenu': 'Alternar Menu',
 
 		// Footer
 		'footer.description':
-		'Espaço de diálogo sobre a Avaliação Estratégica para a definição das prioridades nacionais de investigação e inovação no âmbito da criação da AI².',
+			'Espaço de diálogo sobre a Avaliação Estratégica para a definição das prioridades nacionais de investigação e inovação no âmbito da criação da AI².',
 		'footer.contactPrompt': 'Dúvidas ou sugestões?',
 		'footer.contactLink': 'Contacte-nos',
 		'footer.logoAltPlanapp': 'Logo PLANAPP',
@@ -53,12 +53,19 @@ export const translations: Record<Lang, Record<string, string>> = {
 		'home.heading':
 			'Espaço de diálogo sobre as prioridades nacionais de investigação e inovação no âmbito da criação da AI²',
 		'home.participateBtn': 'Participe no Diálogo',
+		'home.event.eyebrow': 'Próximo evento',
+		'home.event.title': 'Investigação e Inovação para transformar Portugal',
+		'home.event.date': '16 de novembro de 2026',
+		'home.event.time': '14h30',
+		'home.event.location': 'Grande Auditório do Convento São Francisco, Coimbra',
+		'home.event.button': 'Inscreva-se',
 		'home.ctaText':
 			'A sua participação é essencial para definir o futuro da investigação e da inovação em Portugal. Participe no espaço de diálogo e contribua para o desenvolvimento científico e tecnológico do país.',
 		'home.ctaBtn': 'Participar no Diálogo',
 
 		// Page titles
-		'page.publicPresentation.title': 'Apresentação Pública',
+		'page.publicPresentation.title': 'Conferências',
+		'page.publicPresentation.eventFeb24.title': 'Apresentação Pública',
 		'page.publicParticipation.title': 'Participação Pública',
 		'page.publicParticipationMethodology.title': 'Metodologia de Participação Pública',
 		'page.advisoryCommittee.title': 'Comissão de Acompanhamento',
@@ -136,13 +143,13 @@ export const translations: Record<Lang, Record<string, string>> = {
 		'nav.aboutTeam': 'About the Team',
 		'nav.coordination': 'Coordination',
 		'nav.expertTeam': 'Expert Team',
-		'nav.reports.presentations': 'Public Presentation',
+		'nav.reports.presentations': 'Conferences',
 		'nav.reports.methodologicalReport': 'Methodological Report',
 		'nav.toggleMenu': 'Toggle Menu',
 
 		// Footer
 		'footer.description':
-		'Dialogue space on the Strategic Assessment for defining national research and innovation priorities in the context of creating AI².',
+			'Dialogue space on the Strategic Assessment for defining national research and innovation priorities in the context of creating AI².',
 		'footer.contactPrompt': 'Questions or suggestions?',
 		'footer.contactLink': 'Contact us',
 		'footer.logoAltPlanapp': 'PLANAPP Logo',
@@ -159,12 +166,20 @@ export const translations: Record<Lang, Record<string, string>> = {
 		'home.heading':
 			'Dialogue space on the national research and innovation priorities in the context of creating AI²',
 		'home.participateBtn': 'Participate in the Dialogue',
+		'home.learnMore': 'Learn more',
+		'home.event.eyebrow': 'Upcoming event',
+		'home.event.title': 'Research and Innovation to transform Portugal',
+		'home.event.date': '16 November 2026',
+		'home.event.time': '14:30',
+		'home.event.location': 'Grande Auditório do Convento São Francisco, Coimbra',
+		'home.event.button': 'Register',
 		'home.ctaText':
 			"Your participation is essential to define the future of research and innovation in Portugal. Participate in the dialogue space and contribute to the country's scientific and technological development.",
 		'home.ctaBtn': 'Join the Dialogue',
 
 		// Page titles
-		'page.publicPresentation.title': 'Public Presentation',
+		'page.publicPresentation.title': 'Conferences',
+		'page.publicPresentation.eventFeb24.title': 'Public Presentation',
 		'page.publicParticipation.title': 'Public Participation',
 		'page.publicParticipationMethodology.title': 'Public Participation Methodology',
 		'page.advisoryCommittee.title': 'Advisory Committee',

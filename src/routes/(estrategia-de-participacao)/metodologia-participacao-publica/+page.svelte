@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { asset } from '$app/paths';
 	import PageHeader from '$lib/components/page-header.svelte';
 	import { getLang, t } from '$lib/i18n.svelte';
 </script>
@@ -65,6 +66,16 @@
 					<strong>Iniciativas bottom-up</strong>, dinamizadas espontaneamente por agentes do SNCTI.
 				</li>
 			</ul>
+			<p>
+				Os Diálogos da Avaliação Estratégica decorrem em todo o país, com sessões já realizadas e
+				outras ainda por realizar, assinaladas no mapa. Este processo promove uma participação
+				alargada e com representação territorial diversa.
+			</p>
+			<img
+				src={asset('/images/mapa.jpg')}
+				alt="Mapa dos Diálogos da Avaliação Estratégica em Portugal"
+				class="w-full rounded-lg"
+			/>
 		{:else}
 			<p>
 				Public participation in the AI² Strategic Assessment is based on a structured methodology,
@@ -123,6 +134,16 @@
 					<strong>Bottom-up initiatives</strong>, spontaneously organised by actors across the National Science, Technology and Innovation System.
 				</li>
 			</ul>
+			<p>
+				The Strategic Assessment Dialogues take place across the country, with sessions already held
+				and others still to come, marked on the map. This process promotes broad participation with
+				diverse territorial representation.
+			</p>
+			<img
+				src={asset('/images/mapa.jpg')}
+				alt="Map of the Strategic Assessment Dialogues in Portugal"
+				class="w-full rounded-lg"
+			/>
 		{/if}
 	</div>
 </div>

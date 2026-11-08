@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import PageHeader from '$lib/components/page-header.svelte';
 	import { getLang, t } from '$lib/i18n.svelte';
 </script>
@@ -33,21 +34,26 @@
 			</p>
 			<p>
 				Já foram realizados os cinco workshops da primeira fase de focagem em Évora, Funchal, Bragança,
-				Porto e Coimbra (ver abaixo). Estão ainda previstos cinco workshops a realizar em Faro (22 de
-				junho), Covilhã (25 de junho), Ponta Delgada (7 de julho), Aveiro (9 de julho) e Braga (10 de
-				julho), entre o final de junho e início de julho. O tema destes workshops a realizar entre junho e
-				julho será a identificação das opções estratégicas e a sua avaliação.
+				Porto e Coimbra (ver abaixo). Estão ainda previstos cinco workshops a realizar em setembro de
+				2026: Lagoa/Açores (8 de setembro), Covilhã (10 de setembro), Faro (14 de setembro), Braga (16
+				de setembro) e Aveiro (17 de setembro). O tema destes workshops será a identificação das
+				opções estratégicas e a sua avaliação.
 			</p>
 
 			<h2>WORKSHOPS DA FASE DE FOCAGEM:</h2>
 			<p>
-				<strong>Highlights dos workshops da fase de focagem</strong> <em>(a disponibilizar)</em>
+				Síntese global dos workshops (<a
+					href={resolve('/workshops-descentralizados/highlights-sintese-global/')}
+					>highlights da fase de focagem</a
+				>)
 			</p>
 
 			<p>
 				<strong>ÉVORA:</strong> workshop realizado a 5 de maio de 2026, no PACT - Parque do Alentejo de
 				Ciência e Tecnologia, dinamizado localmente pelas Professoras Teresa Pinto Correia e Susana Filipe
-				(Universidade de Évora, CHANGE).
+				(Universidade de Évora, CHANGE). (<a
+					href={resolve('/workshops-descentralizados/highlights-evora/')}>highlights da fase de focagem</a
+				>)
 			</p>
 			<p>
 				<strong>Lista de entidades participantes (por ordem alfabética):</strong> ACOS - Associação de
@@ -65,7 +71,9 @@
 				<strong>FUNCHAL:</strong> workshop realizado a 7 de maio de 2026, na Reitoria da Universidade da
 				Madeira, dinamizado localmente pelo Professor José Câmara (Vice-Reitor para a Investigação, Inovação
 				e Internacionalização da Universidade da Madeira) e Dra. Clementina Reis (Gabinete de Transferência de
-				Conhecimento, Universidade da Madeira).
+				Conhecimento, Universidade da Madeira). (<a
+					href={resolve('/workshops-descentralizados/highlights-funchal/')}>highlights da fase de focagem</a
+				>)
 			</p>
 			<p>
 				<strong>Lista de entidades participantes (por ordem alfabética):</strong> ACIN iCloud Solutions, Apus
@@ -82,7 +90,9 @@
 			<p>
 				<strong>BRAGANÇA:</strong> workshop realizado a 13 de maio de 2026, no Brigantia Ecopark - Parque de
 				Ciência e Tecnologia, dinamizado localmente pela Dra Clotilde Nogueira (Diretora Executiva do Centro
-				Ciência Viva de Bragança).
+				Ciência Viva de Bragança). (<a
+					href={resolve('/workshops-descentralizados/highlights-braganca/')}>highlights da fase de focagem</a
+				>)
 			</p>
 			<p>
 				<strong>Lista de entidades participantes (por ordem alfabética):</strong> ADRAT, Aquavalor, Associação
@@ -101,7 +111,9 @@
 
 			<p>
 				<strong>PORTO:</strong> workshop realizado a 14 de maio de 2026, nas instalações da ANI no Porto,
-				dinamizado localmente pelo Eng.º António Braz Costa (CITEVE, CeNTI).
+				dinamizado localmente pelo Eng.º António Braz Costa (CITEVE, CeNTI). (<a
+					href={resolve('/workshops-descentralizados/highlights-porto/')}>highlights da fase de focagem</a
+				>)
 			</p>
 			<p>
 				<strong>Lista de entidades participantes (por ordem alfabética):</strong> ADVID- Cluster da Vinha e do
@@ -117,7 +129,9 @@
 			<p>
 				<strong>COIMBRA:</strong> workshop realizado a 14 de maio de 2026, no UC Exploratório - Centro Ciência
 				Viva da Universidade de Coimbra, dinamizado localmente pelos Professores Paulo Trincão (Diretor do UC
-				Exploratório) e Manuel Valença (Project Manager do UC Exploratório).
+				Exploratório) e Manuel Valença (Project Manager do UC Exploratório). (<a
+					href={resolve('/workshops-descentralizados/highlights-coimbra/')}>highlights da fase de focagem</a
+				>)
 			</p>
 			<p>
 				<strong>Lista de entidades participantes (por ordem alfabética):</strong> AEMITEQ - Associação para a
@@ -165,21 +179,26 @@
 			</p>
 			<p>
 				The five workshops of the first focus phase have already been held in Évora, Funchal, Bragança, Porto
-				and Coimbra (see below). Five further workshops are planned in Faro (22 June), Covilhã (25 June), Ponta
-				Delgada (7 July), Aveiro (9 July) and Braga (10 July), between late June and early July. The theme of
-				these workshops to be held between June and July will be the identification of strategic options and
-				their assessment.
+				and Coimbra (see below). Five further workshops are planned for September 2026: Lagoa/Azores (8
+				September), Covilhã (10 September), Faro (14 September), Braga (16 September) and Aveiro (17
+				September). The theme of these workshops will be the identification of strategic options and their
+				assessment.
 			</p>
 
 			<h2>FOCUS PHASE WORKSHOPS:</h2>
 			<p>
-				<strong>Highlights from the focus phase workshops</strong> <em>(to be made available)</em>
+				Overall summary of the workshops (<a
+					href={resolve('/workshops-descentralizados/highlights-sintese-global/')}
+					>highlights from the focus phase</a
+				>)
 			</p>
 
 			<p>
 				<strong>ÉVORA:</strong> workshop held on 5 May 2026 at PACT - Parque do Alentejo de Ciência e
 				Tecnologia, locally led by Professors Teresa Pinto Correia and Susana Filipe (University of Évora,
-				CHANGE).
+				CHANGE). (<a href={resolve('/workshops-descentralizados/highlights-evora/')}
+					>highlights from the focus phase</a
+				>)
 			</p>
 			<p>
 				<strong>List of participating entities (alphabetical order):</strong> ACOS - Associação de
@@ -196,7 +215,10 @@
 			<p>
 				<strong>FUNCHAL:</strong> workshop held on 7 May 2026 at the Rectorate of the University of Madeira,
 				locally led by Professor José Câmara (Vice-Rector for Research, Innovation and Internationalisation,
-				University of Madeira) and Dr Clementina Reis (Knowledge Transfer Office, University of Madeira).
+				University of Madeira) and Dr Clementina Reis (Knowledge Transfer Office, University of Madeira). (<a
+					href={resolve('/workshops-descentralizados/highlights-funchal/')}
+					>highlights from the focus phase</a
+				>)
 			</p>
 			<p>
 				<strong>List of participating entities (alphabetical order):</strong> ACIN iCloud Solutions, Apus
@@ -213,6 +235,9 @@
 			<p>
 				<strong>BRAGANÇA:</strong> workshop held on 13 May 2026 at Brigantia Ecopark - Parque de Ciência e
 				Tecnologia, locally led by Dr Clotilde Nogueira (Executive Director, Centro Ciência Viva de Bragança).
+				(<a href={resolve('/workshops-descentralizados/highlights-braganca/')}
+					>highlights from the focus phase</a
+				>)
 			</p>
 			<p>
 				<strong>List of participating entities (alphabetical order):</strong> ADRAT, Aquavalor, Associação
@@ -231,7 +256,10 @@
 
 			<p>
 				<strong>PORTO:</strong> workshop held on 14 May 2026 at ANI premises in Porto, locally led by Eng.
-				António Braz Costa (CITEVE, CeNTI).
+				António Braz Costa (CITEVE, CeNTI). (<a
+					href={resolve('/workshops-descentralizados/highlights-porto/')}
+					>highlights from the focus phase</a
+				>)
 			</p>
 			<p>
 				<strong>List of participating entities (alphabetical order):</strong> ADVID- Cluster da Vinha e do
@@ -247,7 +275,10 @@
 			<p>
 				<strong>COIMBRA:</strong> workshop held on 14 May 2026 at UC Exploratório - Centro Ciência Viva da
 				Universidade de Coimbra, locally led by Professors Paulo Trincão (Director, UC Exploratório) and Manuel
-				Valença (Project Manager, UC Exploratório).
+				Valença (Project Manager, UC Exploratório). (<a
+					href={resolve('/workshops-descentralizados/highlights-coimbra/')}
+					>highlights from the focus phase</a
+				>)
 			</p>
 			<p>
 				<strong>List of participating entities (alphabetical order):</strong> AEMITEQ - Associação para a
