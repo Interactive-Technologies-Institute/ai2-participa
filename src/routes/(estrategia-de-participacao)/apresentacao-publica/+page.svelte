@@ -54,6 +54,33 @@
 						</li>
 					</ul>
 				</li>
+				<li>
+					<strong>16 de novembro de 2026:</strong> Apresentação das prioridades nacionais de
+					investigação e inovação para Portugal no período 2027-2031
+					<ul>
+						<li>
+							apresentação da Professora Maria do Rosário Partidário (<a
+								href={asset('/docs/20261116_APRESENTACAO_MARIA_ROSARIO_PARTIDARIO.pdf')}
+								target="_blank"
+								rel="noreferrer">link</a
+							>)
+						</li>
+						<li>
+							apresentação da Direção de Ciência, Tecnologia e Inovação da OCDE, Philippe Larrue (<a
+								href={asset('/docs/20261116_APRESENTACAO_PHILIPPE_LARRUE.pdf')}
+								target="_blank"
+								rel="noreferrer">link</a
+							>)
+						</li>
+						<li>
+							apresentação do Ministro da Educação, Ciência e Inovação, Fernando Alexandre (<a
+								href={asset('/docs/20261116_APRESENTACAO_FERNANDO_ALEXANDRE.pdf')}
+								target="_blank"
+								rel="noreferrer">link</a
+							>)
+						</li>
+					</ul>
+				</li>
 			</ul>
 		{:else}
 			<ul>
@@ -97,6 +124,34 @@
 							presentation by the Minister of Education, Science and Innovation, Fernando Alexandre
 							(plenary session 5) (<a
 								href={asset('/docs/20260715_APRESENTACAO_FERNANDO_ALEXANDRE.pdf')}
+								target="_blank"
+								rel="noreferrer">link</a
+							>)
+						</li>
+					</ul>
+				</li>
+				<li>
+					<strong>16 November 2026:</strong> Presentation of the national research and innovation
+					priorities for Portugal for 2027-2031
+					<ul>
+						<li>
+							presentation by Professor Maria do Rosário Partidário (<a
+								href={asset('/docs/20261116_APRESENTACAO_MARIA_ROSARIO_PARTIDARIO.pdf')}
+								target="_blank"
+								rel="noreferrer">link</a
+							>)
+						</li>
+						<li>
+							presentation by the OECD Directorate for Science, Technology and Innovation, Philippe
+							Larrue (<a
+								href={asset('/docs/20261116_APRESENTACAO_PHILIPPE_LARRUE.pdf')}
+								target="_blank"
+								rel="noreferrer">link</a
+							>)
+						</li>
+						<li>
+							presentation by the Minister of Education, Science and Innovation, Fernando Alexandre (<a
+								href={asset('/docs/20261116_APRESENTACAO_FERNANDO_ALEXANDRE.pdf')}
 								target="_blank"
 								rel="noreferrer">link</a
 							>)

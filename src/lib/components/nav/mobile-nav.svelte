@@ -2,6 +2,7 @@
 	import { resolve } from '$app/paths';
 	import { buttonVariants } from '$lib/components/ui/button';
 	import * as Popover from '$lib/components/ui/popover';
+	import * as Tooltip from '$lib/components/ui/tooltip';
 	import { t } from '$lib/i18n.svelte';
 	import { cn } from '$lib/utils';
 	import type { HTMLAnchorAttributes, HTMLAttributes } from 'svelte/elements';
@@ -61,7 +62,31 @@
 		preventScroll
 	>
 		<div class="flex flex-col gap-5 overflow-auto px-6 py-6">
-			{@render NavItem({ href: resolve('/relatorios/'), content: t('nav.reports') })}
+			<Tooltip.Root
+				open
+				triggerId="mobile-relatorios-tooltip-trigger"
+				delayDuration={60}
+				disableCloseOnTriggerClick
+			>
+				<Tooltip.Trigger id="mobile-relatorios-tooltip-trigger">
+					{#snippet child({ props })}
+						<a
+							href={resolve('/relatorios/')}
+							{...props}
+							onclick={(event) => {
+								if (typeof props.onclick === 'function') props.onclick(event);
+								open = false;
+							}}
+							class="w-fit text-xl font-medium"
+						>
+							{t('nav.reports')}
+						</a>
+					{/snippet}
+				</Tooltip.Trigger>
+				<Tooltip.Content side="right" sideOffset={8} class="px-4 py-2 text-base lg:hidden">
+					{t('nav.reports.new')}
+				</Tooltip.Content>
+			</Tooltip.Root>
 			<div class="flex flex-col gap-2">
 				<div class="text-sm font-medium text-muted-foreground">
 					{t('nav.participationStrategy')}

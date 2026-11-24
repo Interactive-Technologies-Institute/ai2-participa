@@ -98,11 +98,11 @@
 		{:else}
 			<p>
 				The thematic tables create a space for joint reflection on topics relevant to AI2 budget
-				allocation and to the definition of the strategic domains that make up the decision problem
-				in the Strategic Assessment. The aim of the thematic tables is to build knowledge by
-				exploring in depth the critical aspects, areas of consensus and divergence, and concrete
-				proposals on the topics under discussion. The reflections from the thematic tables are
-				fundamental contributions to different phases of the Strategic Assessment methodology.
+				allocation and the definition of strategic domains that constitute the decision problem in
+				the Strategic Assessment. The aim of the thematic tables is to build knowledge, exploring in
+				depth critical aspects, areas of consensus and divergence, and concrete proposals on the
+				topics under discussion. The reflections of the thematic tables are fundamental
+				contributions to different phases of the Strategic Assessment methodology.
 			</p>
 			<p>There are six thematic tables:</p>
 			<ul>

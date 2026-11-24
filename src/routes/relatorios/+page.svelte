@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { asset } from '$app/paths';
 	import PageHeader from '$lib/components/page-header.svelte';
+	import { Button } from '$lib/components/ui/button';
+	import * as Item from '$lib/components/ui/item';
 	import { getLang, t } from '$lib/i18n.svelte';
 </script>
 
@@ -11,6 +13,31 @@
 			<h2>Entregáveis</h2>
 			<ul>
 				<li>
+					<strong>Relatório Final da Avaliação Estratégica</strong> (<a
+						href={asset('/docs/RelatorioFinalConsultaPublica.pdf')}
+						target="_blank"
+						rel="noreferrer">link</a
+					>);
+				</li>
+				<li>
+					<strong>Relatório Complementar - Relatório de Envolvimento e Participação Pública</strong>
+					(<a
+						href={asset('/docs/RelatorioEnvolvimentoParticipacaoPublica.pdf')}
+						target="_blank"
+						rel="noreferrer">link</a
+					>);
+				</li>
+				<li>
+					<strong
+						>Relatório Complementar - Proposta de sistema de monitorização e avaliação da AI²</strong
+					>
+					(<a
+						href={asset('/docs/PropostaSistemaMonitorizacaoAvaliacao.pdf')}
+						target="_blank"
+						rel="noreferrer">link</a
+					>);
+				</li>
+				<li>
 					Documento com a <strong>metodologia de avaliação estratégica</strong> (<a
 						href={asset('/docs/RelatMetod_PT.pdf')}
 						target="_blank"
@@ -18,35 +45,35 @@
 					>);
 				</li>
 				<li>
-					<strong>Relatório de Focagem Estratégica - versão preliminar</strong> (<a
-						href={asset('/docs/20260621_RELATÓRIO DE FOCAGEM ESTRATEGICA.pdf')}
+					Relatório de Focagem Estratégica - versão preliminar (<a
+						href={asset('/docs/20260621_RELATÓRIO DE FOCAGEM ESTRATEGICA.pdf')}
 						target="_blank"
 						rel="noreferrer">link</a
 					>);
 				</li>
 				<li>
-					<strong>Anexos do Relatório de Focagem Estratégica - versão preliminar</strong> (<a
-						href={asset('/docs/20260621_RELATÓRIO DE FOCAGEM_Anexos.pdf')}
+					Anexos do Relatório de Focagem Estratégica - versão preliminar (<a
+						href={asset('/docs/20260621_RELATÓRIO DE FOCAGEM_Anexos.pdf')}
 						target="_blank"
 						rel="noreferrer">link</a
 					>);
 				</li>
 				<li>
-					<strong>Relatório de Focagem Estratégica - versão final</strong> (<a
+					Relatório de Focagem Estratégica - versão final (<a
 						href={asset('/docs/20260802_RELATORIO_FOCAGEM_ESTRATEGICA_FINAL_PT.pdf')}
 						target="_blank"
 						rel="noreferrer">link</a
 					>);
 				</li>
 				<li>
-					<strong>Anexos do Relatório de Focagem Estratégica - versão final</strong> (<a
+					Anexos do Relatório de Focagem Estratégica - versão final (<a
 						href={asset('/docs/20260802_RELATORIO_FOCAGEM_ESTRATEGICA_ANEXOS_FINAL_PT.pdf')}
 						target="_blank"
 						rel="noreferrer">link</a
 					>);
 				</li>
 				<li>
-					<strong>Quadro de Avaliação Estratégica - versão final</strong> (<a
+					Quadro de Avaliação Estratégica - versão final (<a
 						href={asset('/docs/20260802_QUADRO_AVALIACAO_ESTRATEGICA_FINAL_PT.pdf')}
 						target="_blank"
 						rel="noreferrer">link</a
@@ -72,6 +99,30 @@
 			<h2>Deliverables</h2>
 			<ul>
 				<li>
+					<strong>Final Strategic Assessment Report</strong> (<a
+						href={asset('/docs/RelatorioFinalConsultaPublica.pdf')}
+						target="_blank"
+						rel="noreferrer">link in Portuguese</a
+					>);
+				</li>
+				<li>
+					<strong>Complementary Report - Public Engagement and Participation Report</strong> (<a
+						href={asset('/docs/RelatorioEnvolvimentoParticipacaoPublica.pdf')}
+						target="_blank"
+						rel="noreferrer">link in Portuguese</a
+					>);
+				</li>
+				<li>
+					<strong
+						>Complementary Report - Proposal for a monitoring and evaluation system for AI²</strong
+					>
+					(<a
+						href={asset('/docs/PropostaSistemaMonitorizacaoAvaliacao.pdf')}
+						target="_blank"
+						rel="noreferrer">link in Portuguese</a
+					>);
+				</li>
+				<li>
 					Document with the <strong>strategic assessment methodology</strong> (<a
 						href={asset('/docs/RelatMetod_PT.pdf')}
 						target="_blank"
@@ -79,35 +130,35 @@
 					>);
 				</li>
 				<li>
-					<strong>Strategic Focus Report - preliminary version</strong> (<a
-						href={asset('/docs/20260621_RELATÓRIO DE FOCAGEM ESTRATEGICA.pdf')}
+					Strategic Focus Report - preliminary version (<a
+						href={asset('/docs/20260621_RELATÓRIO DE FOCAGEM ESTRATEGICA.pdf')}
 						target="_blank"
 						rel="noreferrer">link in Portuguese</a
 					>);
 				</li>
 				<li>
-					<strong>Annexes to the Strategic Focus Report - preliminary version</strong> (<a
-						href={asset('/docs/20260621_RELATÓRIO DE FOCAGEM_Anexos.pdf')}
+					Annexes to the Strategic Focus Report - preliminary version (<a
+						href={asset('/docs/20260621_RELATÓRIO DE FOCAGEM_Anexos.pdf')}
 						target="_blank"
 						rel="noreferrer">link in Portuguese</a
 					>);
 				</li>
 				<li>
-					<strong>Strategic Focus Report - final version</strong> (<a
+					Strategic Focus Report - final version (<a
 						href={asset('/docs/20260802_STRATEGIC_FOCUS_REPORT_FINAL_EN.pdf')}
 						target="_blank"
 						rel="noreferrer">link</a
 					>);
 				</li>
 				<li>
-					<strong>Annexes to the Strategic Focus Report - final version</strong> (<a
+					Annexes to the Strategic Focus Report - final version (<a
 						href={asset('/docs/20260802_STRATEGIC_FOCUS_REPORT_ANNEXES_FINAL_EN.pdf')}
 						target="_blank"
 						rel="noreferrer">link</a
 					>);
 				</li>
 				<li>
-					<strong>Strategic Assessment Framework - final version</strong> (<a
+					Strategic Assessment Framework - final version (<a
 						href={asset('/docs/20260802_STRATEGIC_ASSESSMENT_FRAMEWORK_FINAL_EN.pdf')}
 						target="_blank"
 						rel="noreferrer">link</a

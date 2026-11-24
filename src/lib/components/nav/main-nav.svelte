@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import * as NavigationMenu from '$lib/components/ui/navigation-menu';
+	import * as Tooltip from '$lib/components/ui/tooltip';
 	import { t } from '$lib/i18n.svelte';
 	import type { HTMLAttributes } from 'svelte/elements';
 
@@ -14,9 +15,18 @@
 <NavigationMenu.Root class={className} viewport={false}>
 	<NavigationMenu.List>
 		<NavigationMenu.Item>
-			<NavigationMenu.Link href={resolve('/relatorios/')}>
-				{t('nav.reports')}
-			</NavigationMenu.Link>
+			<Tooltip.Root open triggerId="relatorios-tooltip-trigger" disableCloseOnTriggerClick>
+				<Tooltip.Trigger id="relatorios-tooltip-trigger">
+					{#snippet child({ props })}
+						<NavigationMenu.Link href={resolve('/relatorios/')} {...props}>
+							{t('nav.reports')}
+						</NavigationMenu.Link>
+					{/snippet}
+				</Tooltip.Trigger>
+				<Tooltip.Content side="bottom" sideOffset={0} class="px-4 py-2 text-base max-lg:hidden">
+					{t('nav.reports.new')}
+				</Tooltip.Content>
+			</Tooltip.Root>
 		</NavigationMenu.Item>
 		<NavigationMenu.Item>
 			<NavigationMenu.Trigger>{t('nav.participationStrategy')}</NavigationMenu.Trigger>

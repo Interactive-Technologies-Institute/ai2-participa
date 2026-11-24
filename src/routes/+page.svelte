@@ -1,10 +1,8 @@
 <script lang="ts">
+	import { asset } from '$app/paths';
 	import Logo from '$lib/components/logo.svelte';
 	import { Button } from '$lib/components/ui/button';
 	import { getLang, t } from '$lib/i18n.svelte';
-
-	const registrationUrl =
-		'https://www.eventbrite.pt/e/bilhetes-investigacao-e-inovacao-para-transformar-portugal-2003463950608';
 </script>
 
 <svelte:head>
@@ -21,7 +19,7 @@
 			<h1 class="font-title text-4xl font-bold sm:text-5xl md:text-6xl">
 				{t('home.heading')}
 			</h1>
-			<div class="flex justify-center">
+			<div class="flex flex-col items-center justify-center gap-3 sm:flex-row">
 				<Button
 					size="lg"
 					href="https://ai2participa.eu.consider.it/"
@@ -29,6 +27,9 @@
 					rel="noopener noreferrer"
 				>
 					{t('home.participateBtn')}
+				</Button>
+				<Button variant="outline" size="lg" href="mailto:ai2@planapp.gov.pt">
+					{t('home.contributeBtn')}
 				</Button>
 			</div>
 		</div>
@@ -46,6 +47,76 @@
 			<p
 				class="mb-4 inline-flex rounded-full bg-primary-foreground/15 px-3 py-1 text-sm font-semibold tracking-wide uppercase"
 			>
+				{getLang() === 'pt' ? 'Relatórios' : 'Reports'}
+			</p>
+			<h2 class="font-title text-3xl font-bold text-balance sm:text-4xl">
+				{getLang() === 'pt'
+					? 'Relatórios da Avaliação Estratégica'
+					: 'Strategic Assessment reports'}
+			</h2>
+			<ul class="mt-6 space-y-3 text-lg leading-relaxed">
+				<li>
+					<a
+						class="font-semibold underline underline-offset-4 hover:text-primary-foreground/80"
+						href={asset('/docs/RelatorioFinalConsultaPublica.pdf')}
+						target="_blank"
+						rel="noreferrer"
+					>
+						{getLang() === 'pt'
+							? 'Relatório Final da Avaliação Estratégica'
+							: 'Final Strategic Assessment Report'}
+					</a>
+				</li>
+				<li>
+					<a
+						class="font-semibold underline underline-offset-4 hover:text-primary-foreground/80"
+						href={asset('/docs/RelatorioEnvolvimentoParticipacaoPublica.pdf')}
+						target="_blank"
+						rel="noreferrer"
+					>
+						{getLang() === 'pt'
+							? 'Relatório Complementar - Relatório de Envolvimento e Participação Pública'
+							: 'Complementary Report - Public Engagement and Participation Report'}
+					</a>
+				</li>
+				<li>
+					<a
+						class="font-semibold underline underline-offset-4 hover:text-primary-foreground/80"
+						href={asset('/docs/PropostaSistemaMonitorizacaoAvaliacao.pdf')}
+						target="_blank"
+						rel="noreferrer"
+					>
+						{getLang() === 'pt'
+							? 'Relatório Complementar - Proposta de sistema de monitorização e avaliação da AI²'
+							: 'Complementary Report - Proposal for a monitoring and evaluation system for AI²'}
+					</a>
+				</li>
+			</ul>
+			<p class="mt-6 text-lg leading-relaxed">
+				{#if getLang() === 'pt'}
+					Os documentos estão em consulta pública até 23 de novembro. Os contributos podem ser
+					enviados para <a
+						class="font-semibold underline underline-offset-4 hover:text-primary-foreground/80"
+						href="mailto:ai2@planapp.gov.pt">ai2@planapp.gov.pt</a
+					>.
+				{:else}
+					The documents are open for public consultation until 23 November. Contributions can be
+					sent to <a
+						class="font-semibold underline underline-offset-4 hover:text-primary-foreground/80"
+						href="mailto:ai2@planapp.gov.pt">ai2@planapp.gov.pt</a
+					>.
+				{/if}
+			</p>
+		</article>
+	</div>
+</section>
+
+<section class="border-b bg-background py-12 md:py-16">
+	<div class="container">
+		<article class="mx-auto max-w-5xl">
+			<p
+				class="mb-4 inline-flex rounded-full bg-primary px-3 py-1 text-sm font-semibold tracking-wide text-primary-foreground uppercase"
+			>
 				{t('home.event.eyebrow')}
 			</p>
 			<h2 class="font-title text-3xl font-bold text-balance sm:text-4xl">
@@ -60,7 +131,7 @@
 				<span class="hidden sm:inline" aria-hidden="true">·</span>
 				<span>{t('home.event.location')}</span>
 			</div>
-			<div class="mt-5 space-y-4 text-lg leading-relaxed text-primary-foreground/85">
+			<div class="mt-5 space-y-4 text-lg leading-relaxed text-foreground/85">
 				{#if getLang() === 'pt'}
 					<p>
 						As propostas de prioridades estratégicas para a Investigação e Inovação em Portugal,
@@ -89,7 +160,7 @@
 						Estratégica, Professora Maria do Rosário Partidário, entre outros. O programa completo
 						será divulgado em breve.
 					</p>
-					<p class="font-semibold text-primary-foreground">
+					<p class="font-semibold text-foreground">
 						A participação é gratuita, mas sujeita a inscrição prévia até 11 de novembro, ou até ao
 						limite da lotação do espaço. O processo de acreditação no local terá início pelas 13h45.
 					</p>
@@ -120,17 +191,16 @@
 						Coordinator of the Strategic Assessment, Professor Maria do Rosário Partidário, among
 						others. The full programme will be announced shortly.
 					</p>
-					<p class="font-semibold text-primary-foreground">
+					<p class="font-semibold text-foreground">
 						Participation is free of charge, but requires prior registration by 11 November, or
 						until the venue reaches capacity. Accreditation on site starts at 13:45.
 					</p>
 				{/if}
 			</div>
 			<Button
-				variant="secondary"
 				size="lg"
 				class="mt-6 w-full sm:w-auto"
-				href={registrationUrl}
+				href="https://www.eventbrite.pt/e/bilhetes-investigacao-e-inovacao-para-transformar-portugal-2003463950608"
 				target="_blank"
 				rel="noopener noreferrer"
 			>

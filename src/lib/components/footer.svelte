@@ -3,44 +3,52 @@
 	import { Button } from '$lib/components/ui/button';
 	import { Separator } from '$lib/components/ui/separator';
 	import { t } from '$lib/i18n.svelte';
-	import Logo from './logo.svelte';
 </script>
 
 <footer class="border-t bg-muted/50 py-12">
 	<div class="container">
-		<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-			<div class="flex flex-col items-start gap-4">
-				<Logo class="h-24 w-auto" />
-				<p class="max-w-[24rem] text-sm text-muted-foreground">
-					{t('footer.description')}
-				</p>
-				<p class="text-sm text-muted-foreground">
-					{t('footer.contactPrompt')}
-					<a
-						href="mailto:ai2@planapp.gov.pt"
-						class="transition-color text-primary hover:text-foreground"
-					>
-						{t('footer.contactLink')}
-					</a>
-				</p>
-			</div>
-			<div>
-				<div class="flex flex-col gap-4">
+		<div class="grid grid-cols-1 gap-10 lg:grid-cols-4">
+			<div class="flex flex-col gap-6 lg:col-span-2">
+				<div class="max-w-xl">
+					<p class="text-sm text-muted-foreground">
+						{t('footer.description')}
+					</p>
+					<p class="mt-2 text-sm text-muted-foreground">
+						{t('footer.contactPrompt')}
+						<a
+							href="mailto:ai2@planapp.gov.pt"
+							class="transition-color text-primary hover:text-foreground"
+						>
+							{t('footer.contactLink')}
+						</a>
+					</p>
+				</div>
+				<div
+					class="flex flex-col items-start gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-8"
+				>
 					<a href="https://www.planapp.gov.pt/" target="_blank" rel="noreferrer">
 						<img
 							src={asset('/logo-planapp.svg')}
 							alt={t('footer.logoAltPlanapp')}
-							class="h-24 w-auto transition-opacity hover:opacity-80"
+							class="h-16 w-auto transition-opacity hover:opacity-80 sm:h-14"
 						/>
 					</a>
 					<a href="https://www.portugal.gov.pt/pt/gc25" target="_blank" rel="noreferrer">
 						<img
 							src={asset('/logo-pt.svg')}
 							alt={t('footer.logoAltGov')}
-							class="h-20 w-auto transition-opacity hover:opacity-80"
+							class="h-14 w-auto transition-opacity hover:opacity-80 sm:h-12"
+						/>
+					</a>
+					<a href="https://www.fct.pt/" target="_blank" rel="noreferrer">
+						<img
+							src={asset('/logo-fct.png')}
+							alt={t('footer.logoAltFct')}
+							class="h-14 w-auto transition-opacity hover:opacity-80 sm:h-12"
 						/>
 					</a>
 				</div>
+				<p class="max-w-xl text-sm text-muted-foreground">{t('footer.funding')}</p>
 			</div>
 			<div>
 				<p class="font-semibold">{t('footer.participationStrategy')}</p>

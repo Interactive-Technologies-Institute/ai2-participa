@@ -15,6 +15,7 @@ export const translations: Record<Lang, Record<string, string>> = {
 
 		// Nav
 		'nav.reports': 'Relatórios',
+		'nav.reports.new': 'Relatório final disponível',
 		'nav.participationStrategy': 'Estratégia de Participação',
 		'nav.publicParticipation': 'Participação Pública',
 		'nav.publicParticipationMethodology': 'Metodologia de Participação Pública',
@@ -47,12 +48,16 @@ export const translations: Record<Lang, Record<string, string>> = {
 		'footer.copyright':
 			'© 2026 PLANAPP. Processo promovido pelo Ministério da Educação, Ciência e Inovação. Todos os direitos reservados.',
 		'footer.backToTop': 'Voltar ao topo ↑',
+		'footer.funding':
+			'Plataforma de software desenvolvida pelo ITI/LARSyS e financiada pela FCT projetos: 10.54499/LA/P/0083/2020 & UID/50009/2025.',
+		'footer.logoAltFct': 'Logo FCT',
 
 		// Home
 		'home.imgAlt': 'AI² - Agência para a Investigação e Inovação',
 		'home.heading':
 			'Espaço de diálogo sobre as prioridades nacionais de investigação e inovação no âmbito da criação da AI²',
 		'home.participateBtn': 'Participe no Diálogo',
+		'home.contributeBtn': 'Enviar contributo',
 		'home.event.eyebrow': 'Próximo evento',
 		'home.event.title': 'Investigação e Inovação para transformar Portugal',
 		'home.event.date': '16 de novembro de 2026',
@@ -128,6 +133,7 @@ export const translations: Record<Lang, Record<string, string>> = {
 
 		// Nav
 		'nav.reports': 'Reports',
+		'nav.reports.new': 'Final report available',
 		'nav.participationStrategy': 'Participation Strategy',
 		'nav.publicParticipation': 'Public Participation',
 		'nav.publicParticipationMethodology': 'Public Participation Methodology',
@@ -160,13 +166,16 @@ export const translations: Record<Lang, Record<string, string>> = {
 		'footer.copyright':
 			'© 2026 PLANAPP. Process promoted by the Ministry of Education, Science and Innovation. All rights reserved.',
 		'footer.backToTop': 'Back to top ↑',
+		'footer.funding':
+			'Software platform developed by ITI/LARSyS and funded by FCT projects: 10.54499/LA/P/0083/2020 & UID/50009/2025.',
+		'footer.logoAltFct': 'FCT Logo',
 
 		// Home
 		'home.imgAlt': 'AI² - Agency for Research and Innovation',
 		'home.heading':
 			'Dialogue space on the national research and innovation priorities in the context of creating AI²',
 		'home.participateBtn': 'Participate in the Dialogue',
-		'home.learnMore': 'Learn more',
+		'home.contributeBtn': 'Send a contribution',
 		'home.event.eyebrow': 'Upcoming event',
 		'home.event.title': 'Research and Innovation to transform Portugal',
 		'home.event.date': '16 November 2026',
